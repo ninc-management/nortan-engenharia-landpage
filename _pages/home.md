@@ -65,8 +65,9 @@ feature_rows:
     alt: "Administração"
     title: "Administração"
     excerpt: "Esta perdendo muito tempo com atividades burocráticas e perdendo oportunidades? Oferecemos o serviço de Assessor Executivo Remoto com soluções especializadas, a fim de facilitar a sua rotina, atender suas demandas profissionais e proporcionar qualidade de vida e ganhos financeiros."
-advantages_title: 
-  - title: "POR QUE CONTRATAR UM ESPECIALISTA NORTAN?"
+advantages_title:
+  - title: "POR QUE CONTRATAR A NORTAN?"
+    excerpt: ''
 advantages:
   - title: "TUDO EM UM SÓ LUGAR"
     excerpt: "A procura acabou! Temos especialistas de diversas áreas, trabalhando em equipe para tirar seu sonho do papel."
@@ -77,20 +78,19 @@ advantages:
   - title: "GESTÃO DO CONTRATO"
     excerpt: "Monte seu pacote de serviços e projetos e você terá um Gestor do Contrato e uma equipe multidisciplinar para você, não se preocupe com mais nada."
   - title: "EVITE BUROCRACIA"
-    excerpt: "Alvará, licença, viabilidade técnica, é muito papel para uma obra. Deixe isso para seu Especialista."
+    excerpt: "Alvará, licença, viabilidade técnica... É muito papel para uma obra. Deixe isso para seu Especialista."
   - title: "COMUNICAÇÃO"
-    excerpt: "Seu especialista está a uma mensagem de distância, acompanhe seu contrato."
+    excerpt: "Seu Especialista está a uma mensagem de distância, acompanhe seu contrato."
   - title: "PERSONALIZADO"
-    excerpt: "Sabemos que todo sonho tem sua particularidade, seu Especialista irá te guiar pelo melhor caminho para chegar aonde você quer."
+    excerpt: "Sabemos que todo sonho tem sua particularidade. Seu Especialista irá te guiar pelo melhor caminho para chegar aonde você quer."
   - title: "QUALIDADE DE VIDA E TEMPO"
     excerpt: "Para você usar como quiser. Deixe seu Especialista se preocupar com os detalhes."
-request_quote:
-  - title: ''
-    url: "mailto:contato@nortanprojetos.com"
-    icon: "fas fa-envelope"  
+request_invoice:
+  - url: "mailto:contato@nortanprojetos.com"
     btn_class: "btn--success"
-    btn_label: "SOLICITE UM ORÇAMENTO"
+    btn_label: "SOLICITE UM ORÇAMENTO!"
     btn_align: "center"
+contato:
 ---
 
 {% include slider.html selector="slider1" %}
@@ -101,8 +101,8 @@ request_quote:
 
 {% include feature_row_slider id="feature_rows" selector="slider2" properties='data-aos="fade-left"' title_size="h4" %}
 
-{% include feature_row id="advantages_title" type="center" selector="advantages_title_row" properties='style="border-bottom: 0px solid;"' title_size="h2" %}
+{% include feature_row id="advantages_title" type="center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
-{% include feature_row id="advantages" type="dual" selector="advantages_row" properties='data-aos="fade-left"' title_size="h4" %}
+{% include feature_row id="advantages" type="dual" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
 
-{% include feature_row id="request_quote" type="center" selector="request_quote_row" properties='style="border-bottom: 0px solid;"' %}
+{% include feature_row id="request_invoice" type="center" properties='style="margin-top: 1rem;"'%}
