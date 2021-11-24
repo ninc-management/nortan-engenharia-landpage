@@ -69,21 +69,29 @@ advantages_title:
   - title: "POR QUE CONTRATAR A NORTAN?"
     excerpt: ''
 advantages:
-  - title: "TUDO EM UM SÓ LUGAR"
+  - image_path: /assets/images/logo.svg
+    title: "TUDO EM UM SÓ LUGAR"
     excerpt: "A procura acabou! Temos especialistas de diversas áreas, trabalhando em equipe para tirar seu sonho do papel."
-  - title: "GANHOS FINANCEIROS"
+  - image_path: /assets/images/logo.svg
+    title: "GANHOS FINANCEIROS"
     excerpt: "Entregamos eficiência e economia na construção dos seus sonhos."
-  - title: "SEGURANÇA"
+  - image_path: /assets/images/logo.svg
+    title: "SEGURANÇA"
     excerpt: "Investir no seu sonho custa dinheiro e coragem, planeje ele com uma equipe de alto nível."
-  - title: "GESTÃO DO CONTRATO"
+  - image_path: /assets/images/logo.svg
+    title: "GESTÃO DO CONTRATO"
     excerpt: "Monte seu pacote de serviços e projetos e você terá um Gestor do Contrato e uma equipe multidisciplinar para você, não se preocupe com mais nada."
-  - title: "EVITE BUROCRACIA"
+  - image_path: /assets/images/logo.svg
+    title: "EVITE BUROCRACIA"
     excerpt: "Alvará, licença, viabilidade técnica... É muito papel para uma obra. Deixe isso para seu Especialista."
-  - title: "COMUNICAÇÃO"
+  - image_path: /assets/images/logo.svg
+    title: "COMUNICAÇÃO"
     excerpt: "Seu Especialista está a uma mensagem de distância, acompanhe seu contrato."
-  - title: "PERSONALIZADO"
+  - image_path: /assets/images/logo.svg
+    title: "PERSONALIZADO"
     excerpt: "Sabemos que todo sonho tem sua particularidade. Seu Especialista irá te guiar pelo melhor caminho para chegar aonde você quer."
-  - title: "QUALIDADE DE VIDA E TEMPO"
+  - image_path: /assets/images/logo.svg
+    title: "QUALIDADE DE VIDA E TEMPO"
     excerpt: "Para você usar como quiser. Deixe seu Especialista se preocupar com os detalhes."
 request_invoice:
   - url: "mailto:contato@nortanprojetos.com"
