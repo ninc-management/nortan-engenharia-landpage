@@ -7,10 +7,10 @@ intro:
     excerpt: "A NORTAN ENGENHARIA é uma empresa colaborativa de consultores voltados para a prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente. Formada por profissionais criativos, inovadores, capacitados e em constante atualização para atender as necessidades de nossos clientes. Vem se destacando pela qualidade na prestação do serviço, eficiência e confiabilidade. Hoje os escritórios se situam na cidade de Maceió e de Arapiraca em Alagoas, mas a empresa funciona principalmente em ambiente virtual realizando trabalhos em outros estados.<br><br> Fundada em 2020, no início da pandemia, pelo nosso Diretor Hugo Cunha, a Nortan nasceu para trazer engenharia e arquitetura de ponta para o setor de construção civil de Alagoas, reunimos um time de engenheiros e arquitetos empreendedores e que participam do nosso modelo de negócio que valoriza o profissional. Somos a Engenharia Colaborativa, um jeito novo de entregar valor ao cliente."
 missao:
   - title: "NOSSA MISSÃO"
-    excerpt: "Impulsionar a vida profissional de nossos associados, tornando-os capazes para atuarem no que gostam."
+    excerpt: "Entregar soluções para nossos clientes. "
 visao:
   - title: "NOSSA VISÃO"
-    excerpt: "Ser a maior empresa <b>colaborativa</b> multidisciplinar da construção civil e meio ambiente do Brasil."
+    excerpt: "Ser referência no Estado em nossas áreas de atuação até 2024, visando ser a maior empresa de engenharia <b>colaborativa</b> multidisciplinar da construção civil e meio ambiente de Alagoas."
 valores:
   - excerpt: "A Nortan Engenharia é sobre inovação, conheça um pouco das empresas que fazem parte do grupo."
 startup: 
@@ -49,7 +49,9 @@ fundadores:
 
 {% include feature_row id="visao" type="wide" properties='data-aos="fade-left" style="border-bottom: 0px solid; justify-content: left;"' %}
 
-{% include feature_row id="valores" type="wide" title="VALORES" properties='data-aos="fade-up" style="border-bottom: 0px solid; justify-content: left;"' %}
+{% include content_row id="valores" type="wide" title="VALORES" properties='data-aos="fade-up" style="justify-content: left;"' %}
+
+{% include feature_row id="voce" type="wide" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
 {% include feature_row id="startup" type="wide" properties='data-aos="fade-up" style="border-bottom: 0px solid; justify-content: left;"' %}
 
