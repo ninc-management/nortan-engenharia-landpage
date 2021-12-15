@@ -1,0 +1,24 @@
+{% if include.id %}
+  {% assign content_tabs = page[include.id] %}
+{% else %}
+  {% assign content_tabs = page.content_tabs %}
+{% endif %}
+
+{% if include.title %}
+  <h2>{{ include.title }}</h2>
+{% endif %}
+
+<ul class="nav nav-tabs">
+  {% for obj in content_tabs %}
+    <li><a {% if forloop.first  %} class="active" {% endif %} data-toggle="tab" href="#{{obj.title | remove: " " }}">{{ obj.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<div class="tab-content">
+  {% for obj in content_tabs %}
+    <div id="{{obj.title | remove: " " }}" class="tab-pane fade {% if forloop.first %}in active{% endif %}">
+      <h3>{{obj.title}}</h3>
+      <p>{{ obj.excerpt }} </p>
+    </div>
+  {% endfor %}
+</div>
