@@ -12,7 +12,46 @@ visao:
   - title: "NOSSA VISÃO"
     excerpt: "Ser referência no Estado em nossas áreas de atuação até 2024, visando ser a maior empresa de engenharia <b>colaborativa</b> multidisciplinar da construção civil e meio ambiente de Alagoas."
 valores:
-  - excerpt: "A Nortan Engenharia é sobre inovação, conheça um pouco das empresas que fazem parte do grupo."
+  - title: "Autonomia"
+    excerpt: "Já imaginou trabalhar em uma empresa onde você tem autonomia para definir sua forma de trabalhar, horários, o dia que recebo e todo resto? Aqui na Nortan é assim!"
+  - title: "Colaboração"
+    excerpt: "Se quiser ir rápido vá sozinho, mas se quiser ir longe, colabore! Sabemos que colaborar é muito melhor do que competir."
+  - title: "Sonho Grande"
+    excerpt: "Para quem não sabe para onde vai, qualquer caminho basta! 
+		O que te inspira? O que te tira a cama todos os dias?
+ 		Com a Nortan você pode alcançar seu sonho. Venha fazer o impossível com a gente!"
+  - title: "Mente Aberta"
+    excerpt: "Nunca perder a humildade de ouvir
+		pontos de vista diferentes é nosso combustível de crescimento, é onde a colaboração mostra todo seu potencial. Escute, crie e adapte-se."
+  - title: "Espírito Empreendedor"
+    excerpt: "Os nortanzeiros trazem soluções executáveis, não problemas. Pensam fora da caixa e se divertem inovando todos os dias."
+  - title: "Excelência"
+    excerpt: "Fazer o que ama é buscar ser o melhor no que faz todos os dias."
+beneficios:
+  - image_path: /assets/images/produto.jpg
+    alt: "SE PREOCUPE COM O PRODUTO"
+    title: "SE PREOCUPE COM O PRODUTO"
+    excerpt: "Nós fazemos a gestão administrativa e financeira do contrato de forma transparente."
+  - image_path: /assets/images/horario.jpg
+    alt: "FAÇA SEU HORÁRIO"
+    title: "FAÇA SEU HORÁRIO"
+    excerpt: "Trabalhe home office ou em nosso coworking, aqui ninguém vende hora."
+  - image_path: /assets/images/profissional.jpg
+    alt: "SEJA UM PROFISSIONAL COMPLETO"
+    title: "SEJA UM PROFISSIONAL COMPLETO"
+    excerpt: "Aprenda sobre seu mercado, educação financeira, personal branding e empreendedorismo com profissionais experientes."
+  - image_path: /assets/images/contrato.jpg
+    alt: "AUMENTE SUA CARTEIRA DE CONTRATOS"
+    title: "AUMENTE SUA CARTEIRA DE CONTRATOS"
+    excerpt: "Nossa rede de consultores e nosso marketplace permite trocas voluntárias entre cliente externos (gerencie contratos) e internos (faça parte de equipe)."
+  - image_path: /assets/images/equipe.jpg
+    alt: "DESFRUTE DE UMA EQUIPE DE ALTO NÍVEL"
+    title: "DESFRUTE DE UMA EQUIPE DE ALTO NÍVEL"
+    excerpt: "Mentore e seja mentorado. Nosso time se relaciona de forma direta compartilhando conhecimento."
+  - image_path: /assets/images/ganhos.jpg
+    alt: "TENHA GANHOS ILIMITADOS"
+    title: "TENHA GANHOS ILIMITADOS"
+    excerpt: "Tenha clareza do seu balanço financeiro e defina seu pró-labore mensal. Na Nortan o que você produz é seu."
 startup: 
   - title: "STARTUPS NORTAN"
 startup_itens: 
@@ -49,7 +88,7 @@ fundadores:
 
 {% include feature_row id="visao" type="wide" properties='data-aos="fade-left" style="border-bottom: 0px solid; justify-content: left;"' %}
 
-{% include content_row id="valores" type="wide" title="VALORES" properties='data-aos="fade-up" style="justify-content: left;"' %}
+{% include content_tabs id="valores" type="wide" title="VALORES" properties='data-aos="fade-up" style="justify-content: left;"' %}
 
 {% include feature_row id="voce" type="wide" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
