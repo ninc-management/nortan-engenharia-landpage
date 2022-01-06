@@ -69,28 +69,28 @@ advantages_title:
   - title: "POR QUE CONTRATAR A NORTAN?"
     excerpt: ''
 advantages:
-  - image_path: /assets/images/logo.svg
+  - image_path: /assets/images/tick.png
     title: "TUDO EM UM SÓ LUGAR"
     excerpt: "A procura acabou! Temos especialistas de diversas áreas, trabalhando em equipe para tirar seu sonho do papel."
-  - image_path: /assets/images/logo.svg
+  - image_path: /assets/images/tick.png
     title: "GANHOS FINANCEIROS"
     excerpt: "Entregamos eficiência e economia na construção dos seus sonhos."
-  - image_path: /assets/images/logo.svg
+  - image_path: /assets/images/tick.png
     title: "SEGURANÇA"
     excerpt: "Investir no seu sonho custa dinheiro e coragem, planeje ele com uma equipe de alto nível."
-  - image_path: /assets/images/logo.svg
+  - image_path: /assets/images/tick.png
     title: "GESTÃO DO CONTRATO"
     excerpt: "Monte seu pacote de serviços e projetos e você terá um Gestor do Contrato e uma equipe multidisciplinar para você, não se preocupe com mais nada."
-  - image_path: /assets/images/logo.svg
+  - image_path: /assets/images/tick.png
     title: "EVITE BUROCRACIA"
     excerpt: "Alvará, licença, viabilidade técnica... É muito papel para uma obra. Deixe isso para seu Especialista."
-  - image_path: /assets/images/logo.svg
+  - image_path: /assets/images/tick.png
     title: "COMUNICAÇÃO"
     excerpt: "Seu Especialista está a uma mensagem de distância, acompanhe seu contrato."
-  - image_path: /assets/images/logo.svg
+  - image_path: /assets/images/tick.png
     title: "PERSONALIZADO"
     excerpt: "Sabemos que todo sonho tem sua particularidade. Seu Especialista irá te guiar pelo melhor caminho para chegar aonde você quer."
-  - image_path: /assets/images/logo.svg
+  - image_path: /assets/images/tick.png
     title: "QUALIDADE DE VIDA E TEMPO"
     excerpt: "Para você usar como quiser. Deixe seu Especialista se preocupar com os detalhes."
 request_invoice:
