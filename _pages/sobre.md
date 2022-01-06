@@ -12,7 +12,12 @@ visao:
   - title: "NOSSA VISÃO"
     excerpt: "Ser a maior empresa <b>colaborativa</b> multidisciplinar da construção civil e meio ambiente do Brasil."
 valores:
-  - image_path: /assets/images/valores.png
+  - excerpt: "A Nortan Engenharia é sobre inovação, conheça um pouco das empresas que fazem parte do grupo."
+startup: 
+  - title: "STARTUPS NORTAN"
+startup_itens: 
+  - item: "Natan: Seu Assessor Executivo Remoto. escreverei um pouco mais sobre. em breve teremos uma logo própria."
+  - item: "N-Know: Desenvolvemos uma plataforma de gestão administrativa, financeira e operacional para empresas de engenharia e arquietura de todo Brasil"
 trabalhamos_images:
   - image_path: /assets/images/scheme1.png
     alt: "FAÇA PARTE DA EQUIPE"
@@ -44,7 +49,11 @@ fundadores:
 
 {% include feature_row id="visao" type="wide" properties='data-aos="fade-left" style="border-bottom: 0px solid; justify-content: left;"' %}
 
-{% include feature_row id="valores" type="wide" title="VALORES" properties='data-aos="fade-up" style="justify-content: left;"' %}
+{% include feature_row id="valores" type="wide" title="VALORES" properties='data-aos="fade-up" style="border-bottom: 0px solid; justify-content: left;"' %}
+
+{% include feature_row id="startup" type="wide" properties='data-aos="fade-up" style="border-bottom: 0px solid; justify-content: left;"' %}
+
+{% include list id="startup_itens" symbol="+" properties='data-aos="fade-left" style="border-bottom: 0px solid;"' %}
 
 {% include feature_row id="trabalhamos" type="quad-center" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' iproperties='style="border: black 1px solid; border-radius: 20px; padding: 0px 10px;"' %}
 
