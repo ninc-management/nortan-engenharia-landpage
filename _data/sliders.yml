@@ -3,15 +3,18 @@
   captions: true
   images:
     - src: /assets/images/slide1.jpg
-      title: Deseja <b>ampliar</b> sua carteira de contratos?
+      title: 'Está com dificuldade de encontrar um time de técnicos especializados em um só lugar?'
+      excerpt: 'A Nortan Engenharia tem o time certo para você: Arquitetura, projetos complementares, construção, impermeabilização, recursos hídricos, meio ambiente. Do que você precisa?'
     - src: /assets/images/slide2.jpg
-      title: Quer se sentir <b>capaz de atuar</b> em alto nível no que <b>gosta</b>?
+      title: 'Em qual fase está seu empreendimento?'
+      excerpt: 'Faça um pacote de projetos ou serviços do tamanho da sua necessidade. Está tudo bem se você já tiver adiantando com o planejamento do seu sonho, podemos te ajudar justo com a parte que você está com dificuldade, de projetos e construção à relatórios ambientais, temos as pessoas certas para te ajudar.'
     - src: /assets/images/slide3.jpg
-      title: Se <b>destaque</b> no mercado de trabalho e alcance sua <b>liberdade financeira com</b> a Nortan
+      title: 'Seja um cliente Nortan e sinta a diferença'
+      excerpt: "Acreditamos no profissionalismo, e sempre nos guiamos com: &quot;Como eu gostaria de ser atendido&quot;. Para isso nos envolvemos com cada projeto e entregamos a solução mais eficiente para nosso cliente. Comunicação, atenção e entrega."
   settings:
     height: "'auto'"
     initialHeight: 300
-    maxHeight: 400
+    maxHeight: 600
     interval:
     transitionDuration:
     effect:

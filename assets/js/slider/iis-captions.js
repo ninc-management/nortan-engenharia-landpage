@@ -22,6 +22,9 @@
       if (slide.getAttribute('title')) {
         captionContent += '<div class="iis-caption-title">' + slide.getAttribute('title') + '</div>';
       }
+      if(slide.getAttribute('data-excerpt')) {
+        captionContent += '<div class="iis-caption-excerpt">' + slide.getAttribute('data-excerpt') + '</div>'
+      }
       if (slide.getAttribute('data-caption')) {
         var dataCaption = slide.getAttribute('data-caption');
         if (dataCaption.substring(0, 1) == '#' || dataCaption.substring(0, 1) == '.') {
