@@ -8,9 +8,9 @@
   <h2>{{ include.title }}</h2>
 {% endif %}
 
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs nav-justified">
   {% for obj in content_tabs %}
-    <li><a {% if forloop.first  %} class="active" {% endif %} data-toggle="tab" href="#{{obj.title | remove: " " }}">{{ obj.title }}</a></li>
+    <li class="{% if forloop.first %}active{% endif %}"><a {% if forloop.first  %} class="active" {% endif %} data-toggle="tab" href="#{{obj.title | remove: " " }}">{{ obj.title }}</a></li>
   {% endfor %}
 </ul>
 
