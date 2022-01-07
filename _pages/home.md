@@ -65,9 +65,6 @@ feature_rows:
     alt: "Administração"
     title: "Administração"
     excerpt: "Esta perdendo muito tempo com atividades burocráticas e perdendo oportunidades? Oferecemos o serviço de Assessor Executivo Remoto com soluções especializadas, a fim de facilitar a sua rotina, atender suas demandas profissionais e proporcionar qualidade de vida e ganhos financeiros."
-advantages_title:
-  - title: "POR QUE CONTRATAR A NORTAN?"
-    excerpt: ''
 advantages:
   - image_path: /assets/images/tick.png
     title: "TUDO EM UM SÓ LUGAR"
@@ -98,7 +95,14 @@ request_invoice:
     btn_class: "btn--success"
     btn_label: "SOLICITE UM ORÇAMENTO!"
     btn_align: "center"
-contato:
+easy_contact:
+  - image_path: /assets/images/contrataFacil.png
+    alt: "Contato"
+request_contact:
+  - url: "https://wa.me/5582982136209"
+    btn_class: "btn--success"
+    btn_label: "SOLICITE UM ORÇAMENTO!"
+    btn_align: "center"
 ---
 
 {% include slider.html selector="slider1" %}
@@ -111,6 +115,10 @@ contato:
 
 {% include feature_row id="advantages_title" type="center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
-{% include feature_row id="advantages" type="dual" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
+{% include feature_row id="advantages" type="dual" title="POR QUE CONTRATAR A NORTAN?" wtitle_aligment="text-center" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
 
-{% include feature_row id="request_invoice" type="center" properties='style="margin-top: 1rem;"'%}
+{% include feature_row id="request_invoice" type="center" properties='data-aos="fade-up" style="margin-top: 1rem;"'%}
+
+{% include feature_row id="easy_contact" type="wide" title="É FÁCIL CONTRATAR A NORTAN" wtitle_aligment="text-center" properties='data-aos="fade-left" style="border-bottom: 0px solid;"'%}
+
+{% include feature_row id="request_contact" type="center" properties='data-aos="fade-up" style="margin-top: 1rem; border-bottom: 0px solid;"'%}
