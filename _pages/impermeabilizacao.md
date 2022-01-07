@@ -35,9 +35,9 @@ speaker:
 detail:
   - excerpt: "- __Carga Horária:__ O curso terá carga horária de 6 horas e será dividido em 4 aulas de uma hora e meia. Será realizado de forma remota, ao vivo, online, pela plataforma zoom.
 
-    - __Data de Realização:__ 24 e 25 de novembro, 01 e 02 de dezembro
+    - __Data de Realização:__ 26 e 27 de janeiro, 02 e 03 de fevereiro
 
-    - __Horário:__ das 19:00h às 21:00h
+    - __Horário:__ das 19:00h às 20:30h
 
     - __Local:__ Curso remoto ao vivo e online pela plataforma Zoom
 
@@ -51,7 +51,7 @@ detail:
 
     - __Condição de obtenção do certificado:__ Participação em todas aulas
 
-    - __Valor por pessoa:__ R$ 330,00 até o dia 12 de novembro, R$ 440,00 até o dia 22 de novembro ​​
+    - __Valor por pessoa:__ R$ 330,00 até o dia 26 de dezembro, R$ 440,00 até o dia 25 de janeiro​​
 
     - __Recursos Didáticos:__ As aulas serão gravadas e ficará disponível por um período
     de 3 meses. Todo o material usado nas aulas será
