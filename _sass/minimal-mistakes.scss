@@ -38,3 +38,23 @@
 @import "minimal-mistakes/archive";
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
+
+.nav.nav-tabs{
+  height: max-content;
+  li{
+    height: inherit;
+    vertical-align: top;
+    a {
+      height: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #3d4144 !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+.tab-pane > h3 {
+  margin-top: 10px;
+}

@@ -133,4 +133,13 @@ $(document).ready(function() {
       $(this).append(anchor);
     }
   });
+
+  // fix nav height
+  var el = document.querySelector(".nav-tabs");
+  console.log("ELEMENTO:",el.style.height);
+  if (el) {
+    el.style.height = getComputedStyle(el).height;
+  console.log("COMPUTED:",getComputedStyle(el).height);
+
+  }
 });
