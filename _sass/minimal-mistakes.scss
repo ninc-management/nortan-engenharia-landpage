@@ -44,7 +44,7 @@
   li{
     height: inherit;
     vertical-align: top;
-    a {
+    button {
       height: inherit;
       display: flex;
       align-items: center;
@@ -53,8 +53,14 @@
       text-decoration: none !important;
     }
   }
+
+  .nav-item .nav-link.active {
+    font-weight: bold;
+  }
 }
 
-.tab-pane > h3 {
-  margin-top: 10px;
+.tab-pane p {
+  &:first-of-type {
+    margin-top: 10px;
+  }
 }

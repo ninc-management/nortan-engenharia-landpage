@@ -5,13 +5,17 @@ permalink: /sobre/
 intro:
   - title: "CONHEÇA A NORTAN"
     excerpt: "A NORTAN ENGENHARIA é uma empresa colaborativa de consultores voltados para a prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente. Formada por profissionais criativos, inovadores, capacitados e em constante atualização para atender as necessidades de nossos clientes. Vem se destacando pela qualidade na prestação do serviço, eficiência e confiabilidade. Hoje os escritórios se situam na cidade de Maceió e de Arapiraca em Alagoas, mas a empresa funciona principalmente em ambiente virtual realizando trabalhos em outros estados.<br><br> Fundada em 2020, no início da pandemia, pelo nosso Diretor Hugo Cunha, a Nortan nasceu para trazer engenharia e arquitetura de ponta para o setor de construção civil de Alagoas, reunimos um time de engenheiros e arquitetos empreendedores e que participam do nosso modelo de negócio que valoriza o profissional. Somos a Engenharia Colaborativa, um jeito novo de entregar valor ao cliente."
-missao:
+missaoVisao:
   - title: "NOSSA MISSÃO"
+    image_path: /assets/images/icons/missao.png
     excerpt: "Entregar soluções para nossos clientes. "
-visao:
   - title: "NOSSA VISÃO"
+    image_path: /assets/images/icons/visao.png
     excerpt: "Ser referência no Estado em nossas áreas de atuação até 2024, visando ser a maior empresa de engenharia <b>colaborativa</b> multidisciplinar da construção civil e meio ambiente de Alagoas."
 valores:
+  - image_path: /assets/images/icons/valores.png
+    title: "VALORES"
+valores_tabs: 
   - title: "Autonomia"
     excerpt: "Já imaginou trabalhar em uma empresa onde você tem autonomia para definir sua forma de trabalhar, horários, o dia que recebo e todo resto? Aqui na Nortan é assim!"
   - title: "Colaboração"
@@ -62,8 +66,6 @@ trabalhamos_images:
     alt: "FAÇA PARTE DA EQUIPE"
   - image_path: /assets/images/scheme2.png
     alt: "FAÇA PARTE DA EQUIPE"
-fundadores_title:
-  - title: "Conheça nossos fundadores"
 fundadores:
   - title: "Hugo Cunha"
     image_path: /assets/images/pessoas/hugo.png
@@ -82,13 +84,11 @@ fundadores:
     excerpt: "Possui Licenciatura em Matemática e Mestrado em Informática com enfase em computação gráfica, atualmente é Doutorando em Informática na Pontifícia Universidade Católica do Rio de Janeiro(PUC-Rio) com ênfase em aprendizagem de máquina e pesquisador/desenvolvedor bolsista do Instituto Tecgraf/PUC-Rio. Tem atuado na área de Matemática Aplicada, principalmente em computação gráfica e aprendizagem de máquina.​"
 ---
 
-{% include feature_row id="intro" type="wide" properties='data-aos="fade-right"' %}
+{% include feature_row id="intro" type="wide" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
 
-{% include feature_row id="missao" type="wide" properties='data-aos="fade-up" style="border-bottom: 0px solid; justify-content: left;"' %}
+{% include feature_row id="missaoVisao" type="dual feature__item--border-left" properties='data-aos="fade-up" style="border-bottom: 0px solid; text-align: justify;"' %}
 
-{% include feature_row id="visao" type="wide" properties='data-aos="fade-left" style="border-bottom: 0px solid; justify-content: left;"' %}
-
-{% include content_tabs id="valores" type="wide" title="VALORES" properties='data-aos="fade-up" style="justify-content: left;"' %}
+{% include feature_row_tabs id="valores" tabs="valores_tabs" type="left-tabs feature__item--border-left" properties='data-aos="fade-up" style="border-bottom: 0px solid; margin-top: 15px"' %}
 
 {% include feature_row id="voce" type="wide" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
@@ -98,6 +98,4 @@ fundadores:
 
 {% include feature_row id="trabalhamos" type="quad-center" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' iproperties='style="border: black 1px solid; border-radius: 20px; padding: 0px 10px;"' %}
 
-{% include feature_row id="fundadores_title" type="center" properties='data-aos="fade-right"' %}
-
-{% include feature_row id="fundadores" type="penta" %}
+{% include feature_row id="fundadores" title="CONHEÇA NOSSOS FUNDADORES" type="penta" properties='style="border-bottom: 0px solid;"' %}
