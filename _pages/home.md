@@ -4,6 +4,7 @@ layout: splash
 permalink: /
 image_sliders:
   - slider1
+  - slider3
 html_sliders:
   - slider2
 nortan_intro:
@@ -65,44 +66,9 @@ feature_rows:
     alt: "Administração"
     title: "Administração"
     excerpt: "Esta perdendo muito tempo com atividades burocráticas e perdendo oportunidades? Oferecemos o serviço de Assessor Executivo Remoto com soluções especializadas, a fim de facilitar a sua rotina, atender suas demandas profissionais e proporcionar qualidade de vida e ganhos financeiros."
-advantages:
-  - image_path: /assets/images/tick.png
-    title: "TUDO EM UM SÓ LUGAR"
-    excerpt: "A procura acabou! Temos especialistas de diversas áreas, trabalhando em equipe para tirar seu sonho do papel."
-  - image_path: /assets/images/tick.png
-    title: "GANHOS FINANCEIROS"
-    excerpt: "Entregamos eficiência e economia na construção dos seus sonhos."
-  - image_path: /assets/images/tick.png
-    title: "SEGURANÇA"
-    excerpt: "Investir no seu sonho custa dinheiro e coragem, planeje ele com uma equipe de alto nível."
-  - image_path: /assets/images/tick.png
-    title: "GESTÃO DO CONTRATO"
-    excerpt: "Monte seu pacote de serviços e projetos e você terá um Gestor do Contrato e uma equipe multidisciplinar para você, não se preocupe com mais nada."
-  - image_path: /assets/images/tick.png
-    title: "EVITE BUROCRACIA"
-    excerpt: "Alvará, licença, viabilidade técnica... É muito papel para uma obra. Deixe isso para seu Especialista."
-  - image_path: /assets/images/tick.png
-    title: "COMUNICAÇÃO"
-    excerpt: "Seu Especialista está a uma mensagem de distância, acompanhe seu contrato."
-  - image_path: /assets/images/tick.png
-    title: "PERSONALIZADO"
-    excerpt: "Sabemos que todo sonho tem sua particularidade. Seu Especialista irá te guiar pelo melhor caminho para chegar aonde você quer."
-  - image_path: /assets/images/tick.png
-    title: "QUALIDADE DE VIDA E TEMPO"
-    excerpt: "Para você usar como quiser. Deixe seu Especialista se preocupar com os detalhes."
-request_invoice:
-  - url: "mailto:contato@nortanprojetos.com"
-    btn_class: "btn--success"
-    btn_label: "SOLICITE UM ORÇAMENTO!"
-    btn_align: "center"
-easy_contact:
-  - image_path: /assets/images/contrataFacil.png
-    alt: "Contato"
-request_contact:
-  - url: "https://wa.me/5582982136209"
-    btn_class: "btn--success"
-    btn_label: "SOLICITE UM ORÇAMENTO!"
-    btn_align: "center"
+contato:
+  - title: "CONTATO"
+    excerpt: "Av. Comendador Gustavo Paiva, Sala 28, Mezanino, Norcon Empresarial, 2789, Mangabeiras, Maceió, Alagoas, 57037-532<br>contato@nortanprojetos.com<br>(82) 99916-4578"
 ---
 
 {% include slider.html selector="slider1" %}
@@ -113,12 +79,10 @@ request_contact:
 
 {% include feature_row_slider id="feature_rows" selector="slider2" properties='data-aos="fade-left"' title_size="h4" %}
 
-{% include feature_row id="advantages_title" type="center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
+{% include feature_row id="team_title" title="Nossos clientes" type="wide" title_aligment="text-center" properties='style="border-bottom: 0px solid;"' %}
 
-{% include feature_row id="advantages" type="dual" title="POR QUE CONTRATAR A NORTAN?" wtitle_aligment="text-center" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
+{% include slider.html selector="slider3" %}
 
-{% include feature_row id="request_invoice" type="center" properties='data-aos="fade-up" style="margin-top: 1rem;"'%}
+{% include feature_row id="contato" type="center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
-{% include feature_row id="easy_contact" type="wide" title="É FÁCIL CONTRATAR A NORTAN" wtitle_aligment="text-center" properties='data-aos="fade-left" style="border-bottom: 0px solid;"'%}
-
-{% include feature_row id="request_contact" type="center" properties='data-aos="fade-up" style="margin-top: 1rem; border-bottom: 0px solid;"'%}
+{% include contact_map.html %}
