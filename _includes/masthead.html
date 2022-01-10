@@ -18,9 +18,9 @@
                     {% assign class = 'active' %}
                 {% endif %}
                 {% if link.sublinks %}
-                    <li class="dropdown {{ class }}">
-                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }}</a>
-                        <ul class="dropdown-content">
+                    <li class="mydropdown {{ class }}">
+                        <a class="mydropdown-toggle" data-toggle="mydropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }}</a>
+                        <ul class="mydropdown-content">
                             {% for sublink in link.sublinks %}
                                 <li>
                                     <a class="sublink" href="{{ site.baseurl }}{{ sublink.url }}">    {{ sublink.title }}</a>

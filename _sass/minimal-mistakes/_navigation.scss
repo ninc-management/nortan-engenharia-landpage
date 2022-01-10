@@ -260,12 +260,12 @@
       }
     }
 
-    .dropdown {
+    .mydropdown {
       float: left;
       width: auto;
     }
 
-    .dropdown-content {
+    .mydropdown-content {
       display: none;
       position: absolute;
       min-width: 160px;
@@ -317,7 +317,7 @@
       }
     }
 
-    .dropdown:hover .dropdown-content {
+    .mydropdown:hover .mydropdown-content {
       display: block;
     }
   }
@@ -376,11 +376,11 @@
       z-index: 1;
     }
 
-    .dropdown-toggle{
+    .mydropdown-toggle{
       border-bottom: 1px solid #012e40;
     }
 
-    .dropdown-content {
+    .mydropdown-content {
       .sublink{
         padding: 0 0;
         padding-left: 1.5rem;
