@@ -4,6 +4,7 @@ layout: splash
 permalink: /
 image_sliders:
   - slider1
+  - slider3
 html_sliders:
   - slider2
 nortan_intro:
@@ -123,12 +124,10 @@ request_contact:
 
 {% include feature_row_slider id="feature_rows" selector="slider2" properties='data-aos="fade-left"' title_size="h4" %}
 
-{% include feature_row id="advantages_title" type="center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
+{% include feature_row id="team_title" title="Nossos clientes" type="wide" title_aligment="text-center" properties='style="border-bottom: 0px solid;"' %}
 
-{% include feature_row id="advantages" type="dual" title="POR QUE CONTRATAR A NORTAN?" wtitle_aligment="text-center" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
+{% include slider.html selector="slider3" %}
 
-{% include feature_row id="request_invoice" type="center" properties='data-aos="fade-up" style="margin-top: 1rem;"'%}
+{% include feature_row id="contato" type="center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
-{% include feature_row id="easy_contact" type="wide" title="É FÁCIL CONTRATAR A NORTAN" wtitle_aligment="text-center" properties='data-aos="fade-left" style="border-bottom: 0px solid;"'%}
-
-{% include feature_row id="request_contact" type="center" properties='data-aos="fade-up" style="margin-top: 1rem; border-bottom: 0px solid;"'%}
+{% include contact_map.html %}
