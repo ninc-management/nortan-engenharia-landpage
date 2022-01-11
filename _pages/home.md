@@ -4,9 +4,9 @@ layout: splash
 permalink: /
 image_sliders:
   - slider1
-  - slider3
 html_sliders:
   - slider2
+  - slider4
 nortan_intro:
   - image_path: /assets/images/logo.svg
     alt: "A NORTAN"
@@ -18,9 +18,9 @@ nortan_intro:
 
 
     Nossa visão é ser a maior rede colaborativa de consultores da construção civil e meio ambiente, sendo uma referência como uma rede de conexões que proporciona múltiplos canais de venda no mercado, segurança, visibilidade e valorização profissional. Conheça a Nortan, e experimente o que é trabalhar com especialistas."
-areas_atuacao:
+areas_atuacao_title:
   - title: "ÁREAS DE ATUAÇÃO"
-feature_rows:
+areas_atuacao:
   - image_path: /assets/images/arquitetura.jpg
     alt: "Arquitetura"
     title: "Arquitetura e Design de Interiores"
@@ -114,20 +114,120 @@ request_contact:
     btn_class: "btn--success"
     btn_label: "SOLICITE UM ORÇAMENTO!"
     btn_align: "center"
+clients_title:
+  - title: "NOSSOS CLIENTES"
+clients:
+  - image_path: /assets/images/clientes/basica.png
+    alt: "Basica"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/bioverde.png
+    alt: "BioVerde"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/cap.png
+    alt: "Cap"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/csa-logo.svg
+    alt: "C.S.A."
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/cta-meio-amb.png
+    alt: "CTA Meio Ambiente"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/EM.png
+    alt: "EM"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/encibra.png
+    alt: "Encibra"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/engemat.png
+    alt: "Engemat"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/frigosaj.png
+    alt: "Frigosaj"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/hazel.jpg
+    alt: "Hazel"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/janga.png
+    alt: "Janga"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/Lecon.png
+    alt: "Lecon"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/logo-colorado-toritama-principe.png
+    alt: "Colorado"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/Mouradebeux.png
+    alt: "Moura Dubeux"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/precol.png
+    alt: "Precol"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/Rosner.png
+    alt: "Rosner"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/rpontes.png
+    alt: "Rpontes"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/sebrae.png
+    alt: "SEBRAE"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/solidez.png
+    alt: "Solidez"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/Uchoa.png
+    alt: "Uchoa"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/uncisal.png
+    alt: "Uncisal"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/usina-serra-grande.png
+    alt: "Usina Serra Grande"
+    title:
+    excerpt:
+  - image_path: /assets/images/clientes/usina-taquara.png
+    alt: "Usina Taquara"
+    title:
+    excerpt:
 ---
 
 {% include slider.html selector="slider1" %}
 
 {% include feature_row id="nortan_intro" type="left" img_style="padding: 50px;" %}
 
-{% include feature_row id="areas_atuacao" type="wide" title_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
+{% include feature_row id="areas_atuacao_title" type="wide" title_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
-{% include feature_row_slider id="feature_rows" selector="slider2" properties='data-aos="fade-left"' title_size="h4" %}
+{% include feature_row_slider id="areas_atuacao" selector="slider2" properties='data-aos="fade-up"' title_size="h4" %}
 
-{% include feature_row id="team_title" title="Nossos clientes" type="wide" title_aligment="text-center" properties='style="border-bottom: 0px solid;"' %}
+{% include feature_row id="clients_title" type="wide" title_aligment="text-center" properties='data-aos="fade-left" style="border-bottom: 0px solid;"' %}
 
-{% include slider.html selector="slider3" %}
+{% include feature_row_slider id="clients" selector="slider4" title_size="h4" properties='data-aos="fade-left"' %}
 
-{% include feature_row id="contato" type="center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
+{% include feature_row id="advantages" type="dual" title="POR QUE CONTRATAR A NORTAN?" wtitle_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
-{% include contact_map.html %}
+{% include feature_row id="request_invoice" type="center" properties='data-aos="fade-right" style="margin-top: 1rem;"'%}
+
+{% include feature_row id="easy_contact" type="wide" title="É FÁCIL CONTRATAR A NORTAN" wtitle_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"'%}
+
+{% include feature_row id="request_contact" type="center" properties='data-aos="fade-left" style="margin-top: 1rem; border-bottom: 0px solid;"'%}
+

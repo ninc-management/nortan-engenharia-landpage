@@ -31,3 +31,20 @@
     group: 4
     groupClasses: "'feature__wrapper'"
     hasBorder: false
+
+- selector: slider4
+  bullets: true
+  html_settings:
+    height: "'auto'"
+    initialHeight: 210
+    maxHeight: 220
+    interval:
+    transitionDuration:
+    effect:
+    disableNav:
+    keyboardNav:
+    previousNavSelector:
+    nextNavSelector:
+    group: 3
+    groupClasses: "'feature__wrapper'"
+    hasBorder: false
