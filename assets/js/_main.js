@@ -250,6 +250,49 @@ $(document).ready(function () {
     // end of state change: it can be after some time (async)
   };
 
+  // get plataform metrics
+  var xhr1 = new XMLHttpRequest();
+  xhr1.open(
+    "POST",
+    "https://plataforma.nortanengenharia.com/api/public/metric/all",
+    true
+  );
+  xhr1.send(JSON.stringify({}));
+
+  xhr1.onreadystatechange = function () {
+    if (this.readyState != 4) return;
+
+    if (this.status == 200) {
+      var data = JSON.parse(this.responseText);
+      var metrics = document.querySelector("#metrics");
+      if (metrics) {
+        console.log(metrics);
+        const fake = {
+          closedContracts: data.closedContracts,
+          openedContracts: data.openedContracts,
+          clients: data.clients,
+          members: data.members,
+        };
+        const metrics_data = [
+          { name: "Contratos Fechados", value: fake.closedContracts },
+          { name: "Contratos em Andamento", value: fake.openedContracts },
+          { name: "Nº de Clientes", value: fake.clients },
+          { name: "Nº de Nortanzeiros", value: fake.members },
+        ];
+        var child = "";
+        for (metric_data of metrics_data) {
+          child +=
+            `<div class="feature__item--quad-center"><div class="archive__item"><div class="archive__item-teaser"><span>` +
+            metric_data.value +
+            `</span></div><div class="archive__item-body"><h2 class="archive__item-title">` +
+            metric_data.name +
+            `</h2></div></div></div>`;
+        }
+        metrics.insertAdjacentHTML("afterbegin", child);
+      }
+    }
+  };
+
   // fix nav height
   var el = document.querySelector(".nav-tabs");
   if (el) el.style.height = getComputedStyle(el).height;

@@ -11,13 +11,7 @@ nortan_intro:
   - image_path: /assets/images/logo.svg
     alt: "A NORTAN"
     title: "A NORTAN"
-    excerpt: "A Nortan é uma plataforma que conecta Você à Consultores Técnicos nas áreas de Construção Civil e Meio Ambiente, mantendo a garantia, credibilidade e segurança de uma Empresa. Fundada em 2020 a Nortan carrega uma missão: Impulsionar a vida profissional dos nossos Consultores Técnicos, proporcionando segurança e eficiência para os associados e para nossos clientes.
-
-
-    Para isso proporcionamos um ambiente colaborativo de consultores de alta performance voltados para prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente. A Nortan fornece uma equipe capacitada de Consultores Técnicos para resolver o seu problema e tirar seu sonho do papel. Trabalhe com a Nortan e tenha soluções completas para todo o ciclo do empreendimento.
-
-
-    Nossa visão é ser a maior rede colaborativa de consultores da construção civil e meio ambiente, sendo uma referência como uma rede de conexões que proporciona múltiplos canais de venda no mercado, segurança, visibilidade e valorização profissional. Conheça a Nortan, e experimente o que é trabalhar com especialistas."
+    excerpt: "Surgimos em 2020 com uma ideia em mente: Ajudar pessoas a realizarem seus sonhos através da Engenharia. Para isso trouxemos engenharia e arquitetura de ponta para o setor de construção civil de alagoas, com um grande time de engenheiros e arquitetos empreendedores e valorizados, viemos fazer diferente, somos a engenharia colaborativa, um jeito novo de entregar valor ao cliente. Veja o que nossa união gerou de 2020 para cá 😉"
 areas_atuacao_title:
   - title: "ÁREAS DE ATUAÇÃO"
 areas_atuacao:
@@ -213,7 +207,9 @@ clients:
 
 {% include slider.html selector="slider1" %}
 
-{% include feature_row id="nortan_intro" type="left" img_style="padding: 50px;" %}
+{% include feature_row id="nortan_intro" type="left" img_style="padding: 50px;" properties='style="border-bottom: 0px solid;"' %}
+
+<div id="metrics" class="feature__wrapper aos-init aos-animate" data-aos="fade-right"></div>
 
 {% include feature_row id="areas_atuacao_title" type="wide" title_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
@@ -227,7 +223,7 @@ clients:
 
 {% include feature_row id="request_invoice" type="center" properties='data-aos="fade-right" style="margin-top: 1rem;"'%}
 
-{% include feature_row id="easy_contact" type="wide" title="É FÁCIL CONTRATAR A NORTAN" wtitle_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"'%}
+{% include feature_row id="easy_contact" type="wide" title="É FÁCIL CONTRATAR A NORTAN" wtitle_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
-{% include feature_row id="request_contact" type="center" properties='data-aos="fade-left" style="margin-top: 1rem; border-bottom: 0px solid;"'%}
+{% include feature_row id="request_contact" type="center" properties='data-aos="fade-left" style="margin-top: 1rem; border-bottom: 0px solid;"' %}
 

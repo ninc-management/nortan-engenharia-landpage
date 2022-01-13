@@ -86,3 +86,16 @@
 #slider4 img {
   height: 200px;
 }
+
+#metrics {
+  .archive__item-teaser {
+    width: 100% !important;
+  }
+  .archive__item-body {
+    margin-top: -50px;
+  }
+  span {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+}
