@@ -1,0 +1,23 @@
+.accordion-header{
+  padding: 0rem !important;
+  margin: 0rem !important;
+  border-bottom: 0px !important;
+}
+
+@media (min-width: $medium) {
+  #feature_accordion {
+    display: none;
+  }
+  #content_tabs {
+    display: block;
+  }
+}
+
+@media (max-width: $medium) {
+  #feature_accordion {
+    display: block;
+  }
+  #content_tabs {
+    display: none;
+  }
+}

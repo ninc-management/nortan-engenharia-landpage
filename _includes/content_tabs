@@ -4,20 +4,24 @@
   {% assign content_tabs = page.content_tabs %}
 {% endif %}
 
-{% if include.title %}
-  <h2>{{ include.title }}</h2>
-{% endif %}
+<div id="content_tabs">
+  {% if include.title %}
+    <h2>{{ include.title }}</h2>
+  {% endif %}
 
-<ul class="nav nav-tabs nav-justified" role="tablist">
-  {% for obj in content_tabs %}
-    <li class="nav-item" role="presentation"><button class="nav-link {% if forloop.first  %}active{% endif %}" data-bs-toggle="tab" data-bs-target="#{{obj.title | remove: " " }}" type="button" role="tab">{{ obj.title }}</button></li>
-  {% endfor %}
-</ul>
+  <ul class="nav nav-tabs nav-justified" role="tablist">
+    {% for obj in content_tabs %}
+    <li class="nav-item" role="presentation"><button class="nav-link {% if forloop.first  %}active{% endif %}"
+        data-bs-toggle="tab" data-bs-target="#{{obj.title | remove: " " }}" type="button" role="tab">{{ obj.title
+        }}</button></li>
+    {% endfor %}
+  </ul>
 
-<div class="tab-content">
-  {% for obj in content_tabs %}
+  <div class="tab-content">
+    {% for obj in content_tabs %}
     <div id="{{obj.title | remove: " " }}" class="tab-pane fade {% if forloop.first %}show active{% endif %}">
       <p>{{ obj.excerpt }} </p>
     </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>

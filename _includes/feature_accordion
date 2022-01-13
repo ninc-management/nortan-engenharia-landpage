@@ -1,0 +1,35 @@
+{% if include.id %}
+  {% assign content = page[include.id] %}
+{% else %}
+  {% assign content = page.content %}
+{% endif %}
+
+<div class="accordion" id="feature_accordion">
+  {% if include.title %}
+    <h2>{{ include.title }}</h2>
+  {% endif %}
+
+  {% for obj in content %}
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse{{ forloop.index }}"
+        >
+          {{ obj.title }}
+        </button>
+      </h2>
+      <div
+        id="collapse{{ forloop.index }}"
+        class="accordion-collapse collapse"
+        data-bs-parent="#feature_accordion"
+      >
+        <div class="accordion-body">
+          {{ obj.excerpt }}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
