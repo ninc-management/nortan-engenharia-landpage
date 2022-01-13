@@ -54,6 +54,7 @@
 
         <div class="archive__item-body">
           {% include content_tabs id=include.tabs properties='data-aos="fade-up" style="justify-content: left;"' %}
+          {% include feature_accordion id=include.tabs properties='data-aos="fade-up" style="justify-content: left;"' %}
         </div>
       </div>
     </div>
