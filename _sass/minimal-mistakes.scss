@@ -39,9 +39,9 @@
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
 
-.nav.nav-tabs{
+.nav.nav-tabs {
   height: max-content;
-  li{
+  li {
     height: inherit;
     vertical-align: top;
     button {
@@ -67,6 +67,20 @@
 
 #slider2 img {
   border-radius: 50%;
+}
+
+#slider3 {
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  p {
+    text-indent: 0 !important;
+  }
+  h2 {
+    text-transform: capitalize;
+    padding-bottom: 0.5em !important;
+  }
 }
 
 #slider4 img {
