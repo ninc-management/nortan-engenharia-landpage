@@ -110,7 +110,7 @@
   max-width: 50%;
   z-index: 10;
   padding: 5px 90px;
-  font: calc(1.5vw + 1.5vh + 1.5vmin) "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: calc(1.5vw + 1.5vh + 1.5vmin) "Open Sans", sans-serif;
   color: #000;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -118,10 +118,28 @@
   text-align: left;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  .iis-caption {
+    margin: auto;
+    max-width: 90%;
+    padding: 5px 15px;
+    font: calc(1vw + 1vh + 1vmin) "Open Sans", sans-serif;
+  }
+}
 .iis-has-bullet-nav .iis-caption {
   max-width: 42%;
 }
-.iis-caption .iis-caption-title { margin-bottom: 2rem; line-height: 3rem;}
+.iis-caption .iis-caption-title {
+  margin-bottom: 2rem;
+  line-height: 3rem;
+}
+@media (max-width: 768px) {
+  .iis-caption .iis-caption-title {
+    line-height: 1.6em;
+    margin-bottom: 5px;
+    font-weight: 900;
+  }
+}
 .iis-caption .iis-caption-content {
   font-size: 13px;
   line-height: 1.6em;
@@ -138,8 +156,8 @@
   color: #fff;
 }
 
- .iis-caption-excerpt {
-  font: 0.8rem "Helvetica Neue", Helvetica, Arial, sans-serif;
+.iis-caption-excerpt {
+  font: 0.8rem "Open Sans", sans-serif;
   line-height: 1.5rem;
   font-weight: inherit;
 }

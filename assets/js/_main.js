@@ -151,133 +151,133 @@ $(document).ready(function () {
   };
 
   // get plataform users
-  var xhr = new XMLHttpRequest();
-  xhr.open(
-    "POST",
-    "https://plataforma.nortanengenharia.com/api/public/user/all",
-    true
-  );
-  xhr.send(JSON.stringify({}));
+  var sliderData = document.querySelector("#slider3");
+  if (sliderData) {
+    var xhr = new XMLHttpRequest();
+    xhr.open(
+      "POST",
+      "https://plataforma.nortanengenharia.com/api/public/user/all",
+      true
+    );
+    xhr.send(JSON.stringify({}));
 
-  xhr.onreadystatechange = function () {
-    if (this.readyState != 4) return;
+    xhr.onreadystatechange = function () {
+      if (this.readyState != 4) return;
 
-    if (this.status == 200) {
-      var data = JSON.parse(this.responseText);
-      data = data.sort((a, b) => {
-        return nameSort(1, a.fullName, b.fullName);
-      });
-      data.splice(
-        data.findIndex(
-          (member) => member.fullName == "Augusto Ícaro Farias da Cunha"
-        ),
-        1
-      );
-      const augusto = data.splice(
-        data.findIndex(
-          (member) => member.fullName == "José Augusto Gomes da Cunha"
-        ),
-        1
-      );
-      data.unshift(augusto[0]);
-      const jessica = data.splice(
-        data.findIndex((member) => member.fullName == "Jéssica Gonçalves"),
-        1
-      );
-      data.unshift(jessica[0]);
-      const hugo = data.splice(
-        data.findIndex(
-          (member) => member.fullName == "Augusto Hugo Farias da Cunha"
-        ),
-        1
-      );
-      data.unshift(hugo[0]);
-      var wrapperDiv = '<div class="feature__wrapper">';
+      if (this.status == 200) {
+        var data = JSON.parse(this.responseText);
+        data = data.sort((a, b) => {
+          return nameSort(1, a.fullName, b.fullName);
+        });
+        data.splice(
+          data.findIndex(
+            (member) => member.fullName == "Augusto Ícaro Farias da Cunha"
+          ),
+          1
+        );
+        const augusto = data.splice(
+          data.findIndex(
+            (member) => member.fullName == "José Augusto Gomes da Cunha"
+          ),
+          1
+        );
+        data.unshift(augusto[0]);
+        const jessica = data.splice(
+          data.findIndex((member) => member.fullName == "Jéssica Gonçalves"),
+          1
+        );
+        data.unshift(jessica[0]);
+        const hugo = data.splice(
+          data.findIndex(
+            (member) => member.fullName == "Augusto Hugo Farias da Cunha"
+          ),
+          1
+        );
+        data.unshift(hugo[0]);
+        var wrapperDiv = '<div class="feature__wrapper">';
 
-      for (const member of data) {
-        var excerpt = "";
-        switch (member.fullName) {
-          case "Augusto Hugo Farias da Cunha":
-            excerpt =
-              "Diretor Executivo - CEO<br/>" + member.mainDepartment.slice(6);
-            break;
-          case "Jéssica Gonçalves":
-            excerpt =
-              "Diretora de Marketing<br/>" + member.mainDepartment.slice(6);
-            break;
-          case "Tales Augusto Costa Gomes":
-            excerpt =
-              "Diretor de Operações<br/>" + member.mainDepartment.slice(6);
-            break;
-          default:
-            excerpt = member.mainDepartment.slice(6);
-            break;
+        for (const member of data) {
+          var excerpt = "";
+          switch (member.fullName) {
+            case "Augusto Hugo Farias da Cunha":
+              excerpt =
+                "Diretor Executivo - CEO<br/><span>" + member.mainDepartment.slice(6) + "</span>";
+              break;
+            case "Jéssica Gonçalves":
+              excerpt =
+                "Diretora de Marketing<br/><span>" + member.mainDepartment.slice(6) + "</span>";
+              break;
+            case "Tales Augusto Costa Gomes":
+              excerpt =
+                "Diretor de Operações<br/><span>" + member.mainDepartment.slice(6) + "</span>";
+              break;
+            default:
+              excerpt = "<span>" + member.mainDepartment.slice(6) + "</span>";
+              break;
+          }
+          const el =
+            `<div class="feature__item--team"><div class="archive__item"><div class="archive__item-teaser"><img src="` +
+            member.profilePicture +
+            `" alt="` +
+            member.fullName +
+            `" style="" /></div><div class="archive__item-body"><h2 class="archive__item-title">` +
+            (member.exibitionName ? member.exibitionName : member.fullName) +
+            `</h2><div class="archive__item-excerpt"><p>` +
+            excerpt +
+            `</p></div></div></div></div>`;
+          wrapperDiv += el;
         }
-        const el =
-          `<div class="feature__item--team"><div class="archive__item"><div class="archive__item-teaser"><img src="` +
-          member.profilePicture +
-          `" alt="` +
-          member.fullName +
-          `" style="" /></div><div class="archive__item-body"><h2 class="archive__item-title">` +
-          (member.exibitionName ? member.exibitionName : member.fullName) +
-          `</h2><div class="archive__item-excerpt"><p><strong>` +
-          excerpt +
-          `</strong></p></div></div></div></div>`;
-        wrapperDiv += el;
-      }
-      wrapperDiv += "</div>";
+        wrapperDiv += "</div>";
 
-      // we get the returned data
-      var sliderData = document.querySelector("#slider3");
-      if (sliderData) {
+        // we get the returned data
         sliderData.insertAdjacentHTML("afterbegin", wrapperDiv);
+
+        var slider = new IdealHTMLSlider.Slider({
+          selector: "#slider3",
+          height: "auto",
+          initialHeight: 300,
+          maxHeight: 500,
+          interval: 3000,
+          group: 4,
+          groupClasses: "feature__wrapper",
+          hasBorder: false,
+        });
+        slider.addBulletNav();
+        slider.start();
       }
 
-      var slider = new IdealHTMLSlider.Slider({
-        selector: "#slider3",
-        height: "auto",
-        initialHeight: 300,
-        maxHeight: 500,
-        interval: 3000,
-        group: 4,
-        groupClasses: "feature__wrapper",
-        hasBorder: false,
-      });
-      slider.addBulletNav();
-      slider.start();
-    }
-
-    // end of state change: it can be after some time (async)
-  };
+      // end of state change: it can be after some time (async)
+    };
+  }
 
   // get plataform metrics
-  var xhr1 = new XMLHttpRequest();
-  xhr1.open(
-    "POST",
-    "https://plataforma.nortanengenharia.com/api/public/metric/all",
-    true
-  );
-  xhr1.send(JSON.stringify({}));
+  var metrics = document.querySelector("#metrics");
+  if (metrics) {
+    var xhr1 = new XMLHttpRequest();
+    xhr1.open(
+      "POST",
+      "https://plataforma.nortanengenharia.com/api/public/metric/all",
+      true
+    );
+    xhr1.send(JSON.stringify({}));
 
-  xhr1.onreadystatechange = function () {
-    if (this.readyState != 4) return;
+    xhr1.onreadystatechange = function () {
+      if (this.readyState != 4) return;
 
-    if (this.status == 200) {
-      var data = JSON.parse(this.responseText);
-      var metrics = document.querySelector("#metrics");
-      if (metrics) {
-        console.log(metrics);
-        const fake = {
+      if (this.status == 200) {
+        var data = JSON.parse(this.responseText);
+
+        const db_data = {
           closedContracts: data.closedContracts,
           openedContracts: data.openedContracts,
           clients: data.clients,
           members: data.members,
         };
         const metrics_data = [
-          { name: "Contratos Fechados", value: fake.closedContracts },
-          { name: "Contratos em Andamento", value: fake.openedContracts },
-          { name: "Nº de Clientes", value: fake.clients },
-          { name: "Nº de Nortanzeiros", value: fake.members },
+          { name: "Contratos Fechados", value: db_data.closedContracts },
+          { name: "Contratos em Andamento", value: db_data.openedContracts },
+          { name: "Nº de Clientes", value: db_data.clients },
+          { name: "Nº de Nortanzeiros", value: db_data.members },
         ];
         var child = "";
         for (metric_data of metrics_data) {
@@ -290,8 +290,8 @@ $(document).ready(function () {
         }
         metrics.insertAdjacentHTML("afterbegin", child);
       }
-    }
-  };
+    };
+  }
 
   // fix nav height
   var el = document.querySelector(".nav-tabs");

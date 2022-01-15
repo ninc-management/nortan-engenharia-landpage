@@ -57,31 +57,28 @@ beneficios:
     title: "TENHA GANHOS ILIMITADOS"
     excerpt: "Tenha clareza do seu balanço financeiro e defina seu pró-labore mensal. Na Nortan o que você produz é seu."
 startup: 
-  - title: "STARTUPS NORTAN"
+  - excerpt: "A Nortan Engenharia é sobre inovação, conheça um pouco das empresas que fazem parte do grupo:"
+    title: ""
 startup_itens: 
-  - item: "Natan: Seu Assessor Executivo Remoto. escreverei um pouco mais sobre. em breve teremos uma logo própria."
-  - item: "N-Know: Desenvolvemos uma plataforma de gestão administrativa, financeira e operacional para empresas de engenharia e arquietura de todo Brasil"
-trabalhamos_images:
-  - image_path: /assets/images/scheme1.png
-    alt: "FAÇA PARTE DA EQUIPE"
-  - image_path: /assets/images/scheme2.png
-    alt: "FAÇA PARTE DA EQUIPE"
+  - title: "Natan"
+    excerpt: "Seu Assessor Executivo Remoto. escreverei um pouco mais sobre. em breve teremos uma logo própria."
+    image_path: /assets/images/natan.png
+  - title: "NINC"
+    excerpt: "Desenvolvemos uma plataforma de gestão administrativa, financeira e operacional para empresas de engenharia e arquietura de todo Brasil."
+    image_path: /assets/images/logo.svg
 fundadores:
-  - title: "Hugo Cunha"
+  - title: "Hugo Cunha<br /><span>Diretor Executivo - CEO</span>"
     image_path: /assets/images/pessoas/hugo.png
-    excerpt: "Formado em Engenharia Ambiental e Sanitária pela Ufal, mestre em Recursos Hídricos e Saneamento Ambiental pela Ufrgs/IPH. Especialista em Modelagem de Recursos Hídricos, foi Gerente de Gestão de Recursos Hídricos do Estado de Alagoas, tendo recorde em Outorgas para autorizações do uso da água no Estado, além de ter colaborado com a escrita de resoluções, checklist, formulários e procedimentos que atualmente regem o andamento das Outorgas. Atuando em alto nível na área há 6 anos, guiará você a ser um profissional de excelência na área de Recursos Hídricos."
-  - title: "Tales Augusto"
-    image_path: /assets/images/pessoas/tales.png
-    excerpt: "Sócio-diretor Nortan; Projetista de sistemas complementares no setor elétrico; Especialista em Subestações e Sistema de Proteções Eletrica."
-  - title: "Jéssica Gonçalves"
+    excerpt: "Hugo é responsável por traçar e executar o nosso planejamento estratégico, além de ser o primeiro da linha na implementação da cultura empresarial. Com formação em Engenharia e experiência em liderança de grandes times sua visão e direcionamento são peças fundamentais para o nosso sucesso."
+  - title: "Jéssica Gonçalves<br /><span>Diretora de Marketing</span>"
     image_path: /assets/images/pessoas/jessica.png
-    excerpt: "Possui graduação e mestrado em arquitetura e urbanismo pela Universidade Federal de Alagoas, experiência como professora universitária em faculdade de arquitetura e urbanismo e atua há mais de 1 ano com projetos de arquitetura popular.​"
-  - title: "Augusto Cunha"
+    excerpt: "Jéssica é responsável pela nossa imagem. Com formação em arquitetura e uma veia criativa natural, ela garante a implantação da nossa identidade como empresa, planeja e garante a execução da nossa estratégia de marketing e de relacionamento com clientes.​ Sem ela você nem nos conheceria."
+  - title: "Augusto Cunha<br /><span>Comercial</span>"
     image_path: /assets/images/pessoas/augusto.png
-    excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  - title: "Ícaro Cunha"
-    image_path: /assets/images/pessoas/icaro.png
-    excerpt: "Possui Licenciatura em Matemática e Mestrado em Informática com enfase em computação gráfica, atualmente é Doutorando em Informática na Pontifícia Universidade Católica do Rio de Janeiro(PUC-Rio) com ênfase em aprendizagem de máquina e pesquisador/desenvolvedor bolsista do Instituto Tecgraf/PUC-Rio. Tem atuado na área de Matemática Aplicada, principalmente em computação gráfica e aprendizagem de máquina.​"
+    excerpt: "Augusto é responsável por definir a estratégia comercial do setor de projetos, bem como supervisionar a administração das vendas. Seus mais de 30 anos no mercado da construção civil são peças fundamentais para o nosso rápido amadurecimento e sua leitura das tendências do mercado nos faz ficar sempre a frente."
+  - title: "Tales Augusto<br /><span>Diretor de Operações</span>"
+    image_path: /assets/images/pessoas/tales.png
+    excerpt: "Tales é a ponte ente a Direção da Nortan Engenharia e os Diretores Técnicos. É responsável por assegurar a execução dos procedimentos e obtenção dos resultados, em conformidade com a missão da empresa. Seus princípios e filosofia de negócios dentro das diretrizes estratégicas e operacionais estabelecidas em conjunto com os nossos diretores técnicos."
 ---
 
 {% include feature_row id="intro" type="wide" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
@@ -90,12 +87,10 @@ fundadores:
 
 {% include feature_row_tabs id="valores" tabs="valores_tabs" type="left-tabs feature__item--border-left" properties='data-aos="fade-up" style="border-bottom: 0px solid; margin-top: 15px"' %}
 
-{% include feature_row id="voce" type="wide" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
-
 {% include feature_row id="startup" type="wide" properties='data-aos="fade-up" style="border-bottom: 0px solid; justify-content: left;"' %}
 
-{% include list id="startup_itens" symbol="+" properties='data-aos="fade-left" style="border-bottom: 0px solid;"' %}
+{% include feature_row id="startup_itens" type="dual-center" title="STARTUPS NORTAN" img_style="height: 200px" properties='data-aos="fade-left"' %}
 
 {% include feature_row id="trabalhamos" type="quad-center" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' iproperties='style="border: black 1px solid; border-radius: 20px; padding: 0px 10px;"' %}
 
-{% include feature_row id="fundadores" title="CONHEÇA NOSSOS FUNDADORES" type="penta" properties='style="border-bottom: 0px solid;"' %}
+{% include feature_row id="fundadores" title="CONHEÇA NOSSOS FUNDADORES" type="dual dual-team" properties='style="border-bottom: 0px solid;"' %}
