@@ -65,19 +65,14 @@ advantages:
   - image_path: /assets/images/tick.png
     title: "QUALIDADE DE VIDA E TEMPO"
     excerpt: "Para você usar como quiser. Deixe seu Especialista se preocupar com os detalhes."
-request_invoice:
-  - url: "mailto:contato@nortanprojetos.com"
-    icon: "far fa-handshake"
-    btn_class: "btn--success"
-    btn_label: "SOLICITE UM ORÇAMENTO"
-    btn_align: "center"
 easy_contact:
   - image_path: /assets/images/contrataFacil.png
     alt: "Contato"
 request_contact:
   - url: "https://wa.me/558282136209"
+    icon: "far fa-handshake"
     btn_class: "btn--success"
-    btn_label: "SOLICITE UM ORÇAMENTO!"
+    btn_label: "SOLICITE UM ORÇAMENTO"
     btn_align: "center"
 clients_title:
   - title: "NOSSOS CLIENTES"
@@ -194,7 +189,7 @@ clients:
 
 {% include feature_row id="advantages" type="dual" title="POR QUE CONTRATAR A NORTAN?" wtitle_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
-{% include feature_row id="request_invoice" type="center" properties='data-aos="fade-right" style="margin-top: 1rem;"'%}
+{% include feature_row id="request_contact" type="center" properties='data-aos="fade-right" style="margin-top: 1rem;"'%}
 
 {% include feature_row id="easy_contact" type="wide" title="É FÁCIL CONTRATAR A NORTAN" wtitle_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
