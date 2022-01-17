@@ -4,20 +4,27 @@ layout: splash
 permalink: /sobre/
 intro:
   - title: "CONHEÇA A NORTAN"
-    excerpt: "A NORTAN ENGENHARIA é uma empresa colaborativa de consultores voltados para a prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente. Formada por profissionais criativos, inovadores, capacitados e em constante atualização para atender as necessidades de nossos clientes. Vem se destacando pela qualidade na prestação do serviço, eficiência e confiabilidade. Hoje os escritórios se situam na cidade de Maceió e de Arapiraca em Alagoas, mas a empresa funciona principalmente em ambiente virtual realizando trabalhos em outros estados.<br><br> Fundada em 2020, no início da pandemia, pelo nosso Diretor Hugo Cunha, a Nortan nasceu para trazer engenharia e arquitetura de ponta para o setor de construção civil de Alagoas, reunimos um time de engenheiros e arquitetos empreendedores e que participam do nosso modelo de negócio que valoriza o profissional. Somos a Engenharia Colaborativa, um jeito novo de entregar valor ao cliente."
-missaoVisao:
-  - title: "NOSSA MISSÃO"
-    image_path: /assets/images/icons/missao.png
-    excerpt: "Entregar soluções para nossos clientes. "
+    excerpt: "A NORTAN ENGENHARIA é uma empresa colaborativa de consultores voltados para a prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente. Formada por profissionais criativos, inovadores, capacitados e em constante atualização para atender as necessidades de nossos clientes. A Nortan Engenharia Vem se destacando pela qualidade na prestação do serviço, eficiência e confiabilidade. Hoje os escritórios se situam nas cidades de Maceió e de Arapiraca em Alagoas, mas a empresa funciona principalmente em ambiente virtual realizando trabalhos em outros estados.
+
+
+    <b>Fundada em 2020</b> pelo nosso Diretor Hugo Cunha no início da pandemia, a Nortan nasceu <b>para trazer engenharia e arquitetura de ponta</b> para o setor de construção civil de Alagoas, reunimos um time de engenheiros e arquitetos <b>empreendedores</b> e que participam do nosso modelo de negócio que valoriza o profissional. <b>Somos a Engenharia Colaborativa</b>, um jeito novo de entregar valor ao cliente."
+visao:
   - title: "NOSSA VISÃO"
     image_path: /assets/images/icons/visao.png
     excerpt: "Ser referência no Estado em nossas áreas de atuação até 2024, visando ser a maior empresa de engenharia <b>colaborativa</b> multidisciplinar da construção civil e meio ambiente de Alagoas."
+missaoProp:
+  - title: "NOSSA MISSÃO"
+    image_path: /assets/images/icons/missao.png
+    excerpt: "Entregar soluções para nossos clientes."
+  - title: "NOSSO PROPÓSITO"
+    image_path: /assets/images/icons/proposito.png
+    excerpt: "Relizar sonhos através da engenharia."
 valores:
   - image_path: /assets/images/icons/valores.png
     title: "VALORES"
 valores_tabs: 
   - title: "Autonomia"
-    excerpt: "Já imaginou trabalhar em uma empresa onde você tem autonomia para definir sua forma de trabalhar, horários, o dia que recebo e todo resto? Aqui na Nortan é assim!"
+    excerpt: "Já imaginou trabalhar em uma empresa onde você tem autonomia para definir sua forma de trabalhar, horários, o dia que recebe e muito mais? Aqui na Nortan é assim! a holacracia promove a autogestão e empodera nossos associados."
   - title: "Colaboração"
     excerpt: "Se quiser ir rápido vá sozinho, mas se quiser ir longe, colabore! Sabemos que colaborar é muito melhor do que competir."
   - title: "Sonho Grande"
@@ -61,11 +68,11 @@ startup:
     title: ""
 startup_itens: 
   - title: "Natan"
-    excerpt: "Seu Assessor Executivo Remoto. escreverei um pouco mais sobre. em breve teremos uma logo própria."
+    excerpt: "É a marca da Nortan de serviços de assessoria e consultoria administrativa multidisciplinar para pessoas físicas e jurídicas. Nosso objetivo é aliviar a carga de trabalho de nossos clientes para que eles tenham mais tempo para viver."
     image_path: /assets/images/natan.png
   - title: "NINC"
-    excerpt: "Desenvolvemos uma plataforma de gestão administrativa, financeira e operacional para empresas de engenharia e arquietura de todo Brasil."
-    image_path: /assets/images/logo.svg
+    excerpt: "Plataforma de Gestão empresarial <b>voltado para escritórios de Engenharia e Arquitetura. Nosso objetivo é simplificar a gestão administrativa, financeira e operacional de nossos clientes, trazendo os escritórios para o século XXI, a era dos dados e da informação.</b>"
+    image_path: /assets/images/ninc.png
 fundadores:
   - title: "Hugo Cunha<br /><span>Diretor Executivo - CEO</span>"
     image_path: /assets/images/pessoas/hugo.png
@@ -78,14 +85,16 @@ fundadores:
     excerpt: "Augusto é responsável por definir a estratégia comercial do setor de projetos, bem como supervisionar a administração das vendas. Seus mais de 30 anos no mercado da construção civil são peças fundamentais para o nosso rápido amadurecimento e sua leitura das tendências do mercado nos faz ficar sempre a frente."
   - title: "Tales Augusto<br /><span>Diretor de Operações</span>"
     image_path: /assets/images/pessoas/tales.png
-    excerpt: "Tales é a ponte ente a Direção da Nortan Engenharia e os Diretores Técnicos. É responsável por assegurar a execução dos procedimentos e obtenção dos resultados, em conformidade com a missão da empresa. Seus princípios e filosofia de negócios dentro das diretrizes estratégicas e operacionais estabelecidas em conjunto com os nossos diretores técnicos."
+    excerpt: "Tales é a ponte entre os times da Nortan Engenharia. Como nosso diretor de operações, é responsável por assegurar a execução dos procedimentos e facilitando a rotina operacional da empresa, garantindo a produtividade e a gestão adequada dos recursos, sempre em conformidade com a missão da empresa. Seus princípios e filosofia de negócios dentro das diretrizes estratégicas e operacionais estabelecidas em conjunto com os times da Nortan são grandes fatores para nosso sucesso."
 ---
 
 {% include feature_row id="intro" type="wide" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
 
-{% include feature_row id="missaoVisao" type="dual feature__item--border-left" properties='data-aos="fade-up" style="border-bottom: 0px solid; text-align: justify;"' %}
+{% include feature_row id="visao" type="left-small feature__item--border-left" properties='data-aos="fade-up" style="border-bottom: 0px solid; text-align: justify; margin-bottom: 15px"' %}
 
-{% include feature_row_tabs id="valores" tabs="valores_tabs" type="left-tabs feature__item--border-left" properties='data-aos="fade-up" style="border-bottom: 0px solid; margin-top: 15px"' %}
+{% include feature_row id="missaoProp" type="dual feature__item--border-left" properties='data-aos="fade-up" style="border-bottom: 0px solid; text-align: justify;"' %}
+
+{% include feature_row_tabs id="valores" tabs="valores_tabs" type="left-tabs feature__item--border-left" properties='data-aos="fade-right" style="border-bottom: 0px solid; margin-top: 15px"' %}
 
 {% include feature_row id="startup" type="wide" properties='data-aos="fade-up" style="border-bottom: 0px solid; justify-content: left;"' %}
 
@@ -93,4 +102,4 @@ fundadores:
 
 {% include feature_row id="trabalhamos" type="quad-center" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' iproperties='style="border: black 1px solid; border-radius: 20px; padding: 0px 10px;"' %}
 
-{% include feature_row id="fundadores" title="CONHEÇA NOSSOS FUNDADORES" type="dual dual-team" properties='style="border-bottom: 0px solid;"' %}
+{% include feature_row id="fundadores" title="CONHEÇA NOSSOS FUNDADORES" type="dual dual-team" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}

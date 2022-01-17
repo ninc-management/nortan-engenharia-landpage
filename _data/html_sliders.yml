@@ -13,7 +13,7 @@
     nextNavSelector:
     group: 3
     groupClasses: "'feature__wrapper'"
-    hasBorder: true
+    hasBorder: false
 
 - selector: slider3
   bullets: true
@@ -38,7 +38,7 @@
     height: "'auto'"
     initialHeight: 210
     maxHeight: 220
-    interval:
+    interval: 2000
     transitionDuration:
     effect:
     disableNav:

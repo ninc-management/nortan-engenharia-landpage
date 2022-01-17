@@ -19,57 +19,27 @@ areas_atuacao:
     alt: "Arquitetura"
     title: "Arquitetura e Design de Interiores"
     excerpt: "Fazemos projetos arquitetônicos com foco nas pessoas. Nossa especialidade é elaborar espaços que estejam de acordo com as reais necessidades do usuário e de forma a proporcionar verdadeira qualidade de vida além de soluções sustentáveis."
-    icon: "far fa-handshake"
-    url: "https://wa.me/558282136209"
-    btn_class: "btn--success"
-    btn_label: "CONTRATE JÁ"
-    btn_align: "center"
   - image_path: /assets/images/projEstru.jpg
     alt: "Projeto Complementares"
     title: "Projeto Complementares"
     excerpt: ' "Por uma obra sem surpresas" esse é nosso propósito, e uma obra sem surpresas só acontece com projetos em BIM. Você não tem seus projetos em 3d? você não tem um orçamento modelado da sua obra? Você ainda fica dando jeitinho na obra? 
     Você precisa da Nortan Engenharia.'
-    icon: "far fa-handshake"
-    url: "https://wa.me/558282136209"
-    btn_class: "btn--success"
-    btn_label: "CONTRATE JÁ"
-    btn_align: "center"
   - image_path: /assets/images/imperm.jpg
     alt: "Impermeabilização"
     title: "Impermeabilização"
     excerpt: "Desde a fundação à cobertura, a impermeabilização tem o poder de proteger seu patrimônio e seu bem estar. Invista no time que entende, nosso líder Paulo Cunha é referência no Estado, não atoa trabalhamos nas maiores construtoras do Estado. Impermeabilização de reservatórios confinados, lajes, estacionamentos, piscinas, calhas, estamos à disposição."
-    icon: "far fa-handshake"
-    url: "https://wa.me/558282136209"
-    btn_class: "btn--success"
-    btn_label: "CONTRATE JÁ"
-    btn_align: "center"
   - image_path: /assets/images/mediaTensao.jpg
     alt: "Instalações Elétricas"
     title: "Instalações Elétricas"
     excerpt: "Energia Solar, Subestações, Redes de Média Tensão, instalações residenciais e comerciais. Com a experiência da equipe Nortan, sua instalação será eficiente e segura. E não se preocupe com a burocracia, nosso serviço só acaba com a obra aprovada e energizada."
-    icon: "far fa-handshake"
-    url: "https://wa.me/558282136209"
-    btn_class: "btn--success"
-    btn_label: "CONTRATE JÁ"
-    btn_align: "center"
   - image_path: /assets/images/gerenciamento.jpg
     alt: "Construção Civil"
     title: "Construção Civil"
-    excerpt: "Projeto, planejamento, CONSTRUÇÃO. Você sonha e a gente realiza!Trabalhamos por uma obra eficiente, ou seja, que tenha alto padrão técnico e de qualidade, mas que seja econômica. Nossa equipe multidisciplinar garante isso, temos o time certo para construir o seu sonho."
-    icon: "far fa-handshake"
-    url: "https://wa.me/558282136209"
-    btn_class: "btn--success"
-    btn_label: "CONTRATE JÁ"
-    btn_align: "center"
+    excerpt: "Projeto, planejamento, CONSTRUÇÃO. Você sonha e a gente realiza! Trabalhamos por uma obra eficiente, ou seja, que tenha alto padrão técnico e de qualidade, mas que seja econômica. Nossa equipe multidisciplinar garante isso, temos o time certo para construir o seu sonho."
   - image_path: /assets/images/recuHidro.jpg
-    alt: "Recursos Hídricos"
-    title: "Recursos Hídricos"
-    excerpt: "Água é riqueza, para não ter prejuízos, garantimos o uso legalizado e sustentável da sua fonte de riqueza. Elaboramos estudos hidrológicos, regularizamos suas captações de água, lançamentos, obras hídricas e executamos o levantamento de dados através da hidrometria quali-quantitativa: vazões, levantamento batimétrico em reservatórios e instalação de estações de monitoramento."
-    icon: "far fa-handshake"
-    url: "https://wa.me/558282136209"
-    btn_class: "btn--success"
-    btn_label: "CONTRATE JÁ"
-    btn_align: "center"
+    alt: "Recursos Hídricos e Meio Ambientes"
+    title: "Recursos Hídricos e Meio Ambientes"
+    excerpt: "Regularizar sua Licença Ambiental e sua Outorga é só o primeiro passo. Trabalhamos pela sustentabilidade do seu empreendimento, Trabalhamos para garantir água para que você não perca produção. Monitoramento, estudos, avaliação de impactos, consultoria. Vamos além do papel, levamos a engenharia para sua empresa."
 advantages:
   - image_path: /assets/images/tick.png
     title: "TUDO EM UM SÓ LUGAR"
@@ -97,8 +67,9 @@ advantages:
     excerpt: "Para você usar como quiser. Deixe seu Especialista se preocupar com os detalhes."
 request_invoice:
   - url: "mailto:contato@nortanprojetos.com"
+    icon: "far fa-handshake"
     btn_class: "btn--success"
-    btn_label: "SOLICITE UM ORÇAMENTO!"
+    btn_label: "SOLICITE UM ORÇAMENTO"
     btn_align: "center"
 easy_contact:
   - image_path: /assets/images/contrataFacil.png
@@ -214,6 +185,8 @@ clients:
 {% include feature_row id="areas_atuacao_title" type="wide" title_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
 {% include feature_row_slider id="areas_atuacao" selector="slider2" properties='data-aos="fade-up"' title_size="h4" %}
+
+{% include feature_row id="request_contact" type="center" properties='data-aos="fade-left" style="margin-top: 1rem"' %}
 
 {% include feature_row id="clients_title" type="wide" title_aligment="text-center" properties='data-aos="fade-left" style="border-bottom: 0px solid;"' %}
 
