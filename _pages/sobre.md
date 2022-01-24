@@ -71,7 +71,7 @@ startup_itens:
     excerpt: "É a marca da Nortan de serviços de assessoria e consultoria administrativa multidisciplinar para pessoas físicas e jurídicas. Nosso objetivo é aliviar a carga de trabalho de nossos clientes para que eles tenham mais tempo para viver."
     image_path: /assets/images/natan.png
   - title: "NINC"
-    excerpt: "Plataforma de Gestão empresarial <b>voltado para escritórios de Engenharia e Arquitetura. Nosso objetivo é simplificar a gestão administrativa, financeira e operacional de nossos clientes, trazendo os escritórios para o século XXI, a era dos dados e da informação.</b>"
+    excerpt: "Plataforma de Gestão empresarial voltado para escritórios de Engenharia e Arquitetura. Nosso objetivo é simplificar a gestão administrativa, financeira e operacional de nossos clientes, trazendo os escritórios para o século XXI, a era dos dados e da informação."
     image_path: /assets/images/ninc.png
 fundadores:
   - title: "Hugo Cunha<br /><span>Diretor Executivo - CEO</span>"
