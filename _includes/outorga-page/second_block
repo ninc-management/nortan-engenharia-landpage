@@ -1,0 +1,12 @@
+{% assign block = page[include.id][0] %}
+
+<div class="second_block">
+  <div class="background" style="background-image: url('{{ block.background_path }}');"></div>
+  <div class="waves" style="background-image: url('{{ block.waves_path }}');"></div>
+  <div class="video_wrapper">
+    <iframe src="https://www.youtube.com/embed/K5KIvrmYj4A" title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <button><a href="#start">Quero saber mais!</a></button>
+  </div>
+</div>
