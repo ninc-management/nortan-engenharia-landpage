@@ -1,0 +1,38 @@
+{% assign block = page[include.id][0] %}
+
+<div
+  class="fourth-block"
+  style="background-image: url('{{ block.background_path }}');"
+>
+  <div class="content-wrapper">
+    <div class="content-header">
+      <div class="outer-border">
+        A <span class="header-highlight">Outorga</span> é necessária para
+        diversas atividades e negócios:
+      </div>
+    </div>
+    <div class="items-wrapper">
+      <ul>
+        <li class="list-item">
+          <h1 class="item-number">1</h1>
+          <h3 class="item-title">Acesso à ﬁnanciamento rural</h3>
+        </li>
+        <li class="list-item">
+          <h1 class="item-number">2</h1>
+          <h3 class="item-title">Acesso à tarifa verde na Equatorial</h3>
+        </li>
+        <li class="list-item">
+          <h1 class="item-number">3</h1>
+          <h3 class="item-title">Financiar a venda do seu Imóvel</h3>
+        </li>
+        <li class="list-item">
+          <h1 class="item-number">4</h1>
+          <h3 class="item-title">Licenciamento ambiental</h3>
+        </li>
+      </ul>
+    </div>
+    <button>
+      <a href="#start">Quero saber mais!</a>
+    </button>
+  </div>
+</div>

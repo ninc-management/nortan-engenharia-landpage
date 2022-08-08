@@ -113,3 +113,89 @@
     font-weight: bold;
   }
 }
+
+.fourth-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #3A5F57;
+  font-family: "Marcellus", serif;
+  color: white;
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin: 8.5rem 0rem;
+    min-width: 50%;
+
+    .content-header {
+      background-color: white;
+      border: 2px solid white;
+      color: #275C5C;
+      padding: 0.25rem;
+      font-size: 1.5rem;
+      border-radius: 0.5rem;
+
+      .outer-border {
+        padding: 1rem;
+        border: 1px solid #D8DFDE;
+        text-align: center;
+      }
+
+      .header-highlight{
+        color: #7DB79E;
+      }
+    }
+
+    .items-wrapper {
+      display: flex;
+      justify-content: center;
+      background: rgba(37, 79, 78, 0.7);
+      width: 96%;
+
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+
+      .list-item {
+        display: flex;
+        align-items: center;
+        color: white;
+
+        & > * {
+          margin: 0;
+        }
+
+        .item-title{
+          font-weight: normal;
+          padding: 1rem 1rem 1rem 0;
+          font-family: "Marcellus", serif;
+        }
+      
+        .item-number {
+          font-family: "Open Sans", serif;
+          font-size: 2rem;
+          padding: 1rem;
+        }
+      }
+    }
+
+    button {
+      padding: 1rem 2.5rem;
+      background: #7DB79E;
+      border: none;
+      margin-top: 1.25rem;
+      font-size: 2rem;
+      font-family: "Marcellus", serif;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
