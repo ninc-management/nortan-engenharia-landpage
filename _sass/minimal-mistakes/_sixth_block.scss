@@ -1,0 +1,111 @@
+.sixth-block {
+  width: 100%;
+  font-family: "Marcellus", serif;
+  color: white;
+  
+  
+  .content-header {
+    background-color: #7DB79E;
+    font-size: 1.75rem;
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+
+    .header-highlight{
+      color: #3A5F57;
+    }
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .specialist-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 1rem 0;
+    
+    @include breakpoint($medium) {
+      margin: 0;
+    }
+    
+    & h2 {
+      margin: 0;
+    }
+    
+    .specialist-name {
+      font-family: "Marcellus", serif;
+    }
+ 
+    .specialist-description {
+      color: #3A5F57;
+      margin: auto;
+      text-align: center;
+
+      @include breakpoint($medium) {
+        text-align: left;
+      }
+    }
+
+    .specialist-picture {
+      border: 1rem solid #3A5F57;
+      border-radius: 1rem;
+      margin: 0 auto 1rem auto;
+      height: 200px;
+      width: 200px;
+
+      @include breakpoint($medium) {
+        margin: 1rem 1.75rem;
+      }
+    }    
+  }
+
+  .middle-specialist {
+    flex-direction: row-reverse;
+    text-align: end;
+  }
+
+  .middle-specialist .specialist-description {
+    @include breakpoint($medium) {
+      text-align: right;
+    }
+  }
+
+
+  .align-end {
+    text-align: end;
+  }
+
+  .title-arrow{
+    height: 2rem;
+    width: 3rem;
+    margin: auto auto 1rem auto;
+
+    @include breakpoint($medium) {
+      margin-left: 38vw;
+    }
+  }
+
+  button {
+    margin: auto;
+    padding: 1rem 3rem;
+    background: #3A5F57;
+    border: none;
+    font-size: 2rem;
+    font-family: "Marcellus", serif;
+    border-radius: 1.5rem;
+
+    @include breakpoint($medium) {
+      margin: 2.5rem 0 0 0;
+      padding: 1rem 6rem;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

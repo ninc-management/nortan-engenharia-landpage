@@ -44,6 +44,7 @@
 @import "minimal-mistakes/outorga-page/third-block";
 @import "minimal-mistakes/outorga-page/fourth-block";
 @import "minimal-mistakes/outorga-page/five-block";
+@import "minimal-mistakes/sixth_block";
 
 .nav.nav-tabs {
   height: max-content;
@@ -102,8 +103,8 @@
   height: 200px;
 }
 
-#slider4{
-  .iis-bullet-nav{
+#slider4 {
+  .iis-bullet-nav {
     bottom: -24px;
   }
 }
@@ -122,4 +123,3 @@
     font-weight: bold;
   }
 }
-

@@ -1,0 +1,69 @@
+{% assign block = page[include.id][0] %}
+
+<div class="sixth-block content-wrapper">
+  <div class="content-header">
+    PROFISSIONAIS
+    <span class="header-highlight">ESPECIALISTAS</span>
+  </div>
+  <div
+    class="title-arrow"
+    style="background-image: url('{{ block.arrow_path }}');"
+  ></div>
+  <div class="content-wrapper">
+    <div class="specialist-wrapper">
+      <img class="specialist-picture" src="{{ block.hugo_image_path }}" />
+      <div class="specialist-description">
+        <h2 class="specialist-name">Hugo Cunha</h2>
+        <div>Eng. Ambiental e Sanitarista</div>
+        <div>Mestre em Recursos Hídricos</div>
+      </div>
+    </div>
+    <div class="specialist-wrapper middle-specialist">
+      <img class="specialist-picture" src="{{ block.hugo_image_path }}" />
+      <div class="specialist-description">
+        <h2 class="specialist-name">Pedro Brito</h2>
+        <div>Eng. Civil</div>
+        <div>Doutor em Recursos Hídricos</div>
+      </div>
+    </div>
+    <div class="specialist-wrapper">
+      <img class="specialist-picture" src="{{ block.hugo_image_path }}" />
+      <div class="specialist-description">
+        <h2 class="specialist-name">Alberonaldo Alves</h2>
+        <div>Eng. Ambiental e Sanitarista</div>
+        <div>Mestre em Recursos Hídricos</div>
+      </div>
+    </div>
+    <button>
+      <a href="#start">Estou pronto!</a>
+    </button>
+  </div>
+</div>
+
+<script>
+  fetch("https://plataforma.nortanengenharia.com/api/public/user/all", {
+    method: "POST",
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const specialistsPictures = data.reduce((specialists, user) => {
+        if (
+          user.fullName == "Pedro Lucas Cosmo de Brito" ||
+          user.fullName == "Alberonaldo Lima Alves" ||
+          user.fullName == "Augusto Hugo Farias da Cunha"
+        ) {
+          specialists[user.fullName] = user.profilePicture;
+        }
+        return specialists;
+      }, {});
+      const specialistPictureTags = document.querySelectorAll(
+        ".specialist-picture"
+      );
+      specialistPictureTags[0].src =
+        specialistsPictures["Augusto Hugo Farias da Cunha"];
+      specialistPictureTags[1].src =
+        specialistsPictures["Pedro Lucas Cosmo de Brito"];
+      specialistPictureTags[2].src =
+        specialistsPictures["Alberonaldo Lima Alves"];
+    });
+</script>
