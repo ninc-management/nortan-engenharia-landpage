@@ -119,3 +119,4 @@ sixth_block:
 {% include feature_row_slider id="clients" selector="slider4" title_size="h4" properties='data-aos="fade-left"' %}
 
 {% include /outorga-page/sixth_block.html id="sixth_block" %}
+{% include /outorga-page/final_block.html %}
