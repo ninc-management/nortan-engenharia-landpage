@@ -1,0 +1,164 @@
+<div class="seventh-block">
+  <div class="content-wrapper">
+    <h3 class="content-title">
+      O QUE ENGLOBA <br />O
+      <span class="color-highlight">SERVIÇO DA NORTAN</span>?
+    </h3>
+    <div class="accordion">
+      <div class="accordion-item">
+        <h5 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <span class="item-number">1</span>
+            <span class="item-text">Outorga Superficial</span>
+          </button>
+        </h5>
+        <div id="collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">texto</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h5 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            <span class="item-number">2</span>
+            <span class="item-text">Outorga de Poço</span>
+          </button>
+        </h5>
+        <div id="collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">texto</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h5 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            <span class="item-number">3</span>
+            <span class="item-text">Outorga de Lançamento</span>
+          </button>
+        </h5>
+        <div id="collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">texto</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h5 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFour"
+            aria-expanded="false"
+            aria-controls="collapseFour"
+          >
+            <span class="item-number">4</span>
+            <span class="item-text">Outorga de Barragem</span>
+          </button>
+        </h5>
+        <div id="collapseFour" class="accordion-collapse collapse">
+          <div class="accordion-body">texto</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h5 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFive"
+            aria-expanded="false"
+            aria-controls="collapseFive"
+          >
+            <span class="item-number">5</span>
+            <span class="item-text"
+              >Atendimento e Acompanhamento de condicionante</span
+            >
+          </button>
+        </h5>
+        <div id="collapseFive" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul>
+              <li>Medição de vazão em rio</li>
+              <li>Instalação de estação limnmétrica e fluviométrica</li>
+              <li>Medição de nível estático e teste de bombeamento</li>
+              <li>Análise de qualidade de água</li>
+              <li>Monitoramento de vazões captadas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h5 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseSix"
+            aria-expanded="false"
+            aria-controls="collapseSix"
+          >
+            <span class="item-number">6</span
+            ><span class="item-text"> Estudo hidrológico e modelagem</span>
+          </button>
+        </h5>
+        <div id="collapseSix" class="accordion-collapse collapse">
+          <div class="accordion-body">texto</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h5 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseSeven"
+            aria-expanded="false"
+            aria-controls="collapseSeven"
+          >
+            <span class="item-number">7</span>
+            <span class="item-text">Batimetria de resevatório</span>
+          </button>
+        </h5>
+        <div id="collapseSeven" class="accordion-collapse collapse">
+          <div class="accordion-body">texto</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h5 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseEight"
+            aria-expanded="false"
+            aria-controls="collapseEight"
+          >
+            <span class="item-number">8</span>
+            <span class="item-text">Estudo de inundação</span>
+          </button>
+        </h5>
+        <div id="collapseEight" class="accordion-collapse collapse">
+          <div class="accordion-body">texto</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

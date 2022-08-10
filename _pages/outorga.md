@@ -4,8 +4,8 @@ permalink: /outorga/
 html_sliders:
   - slider4
 first_block:
-    - background_path: /assets/images/padrao_nortan.png
-      nab_path: /assets/images/nab.png
+  - background_path: /assets/images/padrao_nortan.png
+    nab_path: /assets/images/nab.png
 second_block:
   - background_path: /assets/images/padrao_nortan.png
     waves_path: /assets/images/layered_waves.svg
@@ -119,4 +119,5 @@ sixth_block:
 {% include feature_row_slider id="clients" selector="slider4" title_size="h4" properties='data-aos="fade-left"' %}
 
 {% include /outorga-page/sixth_block.html id="sixth_block" %}
+{% include /outorga-page/seventh_block %}
 {% include /outorga-page/final_block.html %}

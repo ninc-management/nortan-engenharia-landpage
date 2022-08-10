@@ -29,7 +29,6 @@
 @import "minimal-mistakes/footer";
 @import "minimal-mistakes/search";
 @import "minimal-mistakes/syntax";
-@import "minimal-mistakes/accordion";
 
 /* Utility classes */
 @import "minimal-mistakes/utilities";
@@ -122,5 +121,100 @@
   span {
     font-size: 4rem;
     font-weight: bold;
+  }
+}
+
+.seventh-block {
+  background-color: #7db79e;
+  color: white;
+
+  h3,
+  h5 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-flow: column;
+    margin: 0rem 6rem;
+    padding: 3rem;
+  }
+
+  .content-title {
+    font-family: "Marcellus", serif;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 3rem;
+  }
+
+  .accordion-button {
+    padding: 12px;
+    background-color: #7db79e;
+  }
+  .accordion-item {
+    border-color: #7db79e;
+  }
+
+  .accordion-body {
+    background-color: #7db79e;
+    ul {
+      list-style: none;
+    }
+  }
+
+  .item-number {
+    font-family: "Marcellus", serif;
+    color: #3a5f57;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-right: 25px;
+  }
+  .item-text {
+    font-family: "Marcellus", serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .items-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 96%;
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      color: white;
+
+      & > * {
+        margin: 0;
+      }
+
+      .item-title {
+        font-weight: normal;
+        padding: 1rem 1rem 1rem 0;
+        font-family: "Marcellus", serif;
+      }
+    }
+  }
+
+  .color-highlight {
+    color: #3a5f57;
+  }
+
+  @media (max-width: 768px) {
+    .content-wrapper {
+      padding: 1.25rem;
+      margin: 0rem 1rem;
+    }
+    .content-title {
+      padding-bottom: 1.5rem;
+    }
   }
 }
