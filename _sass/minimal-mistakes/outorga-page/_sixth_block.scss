@@ -2,17 +2,16 @@
   width: 100%;
   font-family: "Marcellus", serif;
   color: white;
-  
-  
+
   .content-header {
-    background-color: #7DB79E;
+    background-color: $nortan;
     font-size: 1.75rem;
     width: 100%;
     padding: 0.5rem;
     text-align: center;
 
-    .header-highlight{
-      color: #3A5F57;
+    .header-highlight {
+      color: $background;
     }
   }
 
@@ -27,21 +26,21 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 0 0 1rem 0;
-    
+
     @include breakpoint($medium) {
       margin: 0;
     }
-    
+
     & h2 {
       margin: 0;
     }
-    
+
     .specialist-name {
       font-family: "Marcellus", serif;
     }
- 
+
     .specialist-description {
-      color: #3A5F57;
+      color: $background;
       margin: auto;
       text-align: center;
 
@@ -51,7 +50,7 @@
     }
 
     .specialist-picture {
-      border: 1rem solid #3A5F57;
+      border: 1rem solid $background;
       border-radius: 1rem;
       margin: 0 auto 1rem auto;
       height: 200px;
@@ -60,7 +59,7 @@
       @include breakpoint($medium) {
         margin: 1rem 1.75rem;
       }
-    }    
+    }
   }
 
   .middle-specialist {
@@ -74,12 +73,11 @@
     }
   }
 
-
   .align-end {
     text-align: end;
   }
 
-  .title-arrow{
+  .title-arrow {
     height: 2rem;
     width: 3rem;
     margin: auto auto 1rem auto;
@@ -92,7 +90,7 @@
   button {
     margin: auto;
     padding: 1rem 3rem;
-    background: #3A5F57;
+    background: $background;
     border: none;
     font-size: 2rem;
     font-family: "Marcellus", serif;
