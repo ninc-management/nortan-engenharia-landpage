@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #3a5f57;
+  background-color: $nortan-background;
   font-family: "Marcellus", serif;
   color: white;
 
@@ -18,7 +18,7 @@
     .content-header {
       background-color: white;
       border: 2px solid white;
-      color: #275c5c;
+      color: $nortan-dark;
       padding: 0.25rem;
       font-size: 1.5rem;
       border-radius: 0.5rem;
@@ -30,7 +30,7 @@
       }
 
       .header-highlight {
-        color: #7db79e;
+        color: $nortan;
       }
     }
 
@@ -70,7 +70,7 @@
 
     button {
       padding: 1rem 2.5rem;
-      background: #7db79e;
+      background: $nortan;
       border: none;
       margin-top: 1.25rem;
       font-size: 2rem;
