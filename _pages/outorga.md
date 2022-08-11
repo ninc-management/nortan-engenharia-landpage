@@ -1,4 +1,4 @@
-  ---
+---
 layout: default-no-menu
 permalink: /outorga/
 html_sliders:
@@ -106,7 +106,7 @@ clients:
     alt: "Usina Taquara"
     title:
     excerpt:
-    
+
 ---
 
 {% include /outorga-page/first_block id="first_block" %}
@@ -114,7 +114,8 @@ clients:
 {% include /outorga-page/third_block id="third_block" %}
 {% include /outorga-page/fourth_block id="fourth_block" %}
 
-<h3 class="clients">Empresas que <span style="color:#7AB99D">confiam</span> no trabalho da <b>Nortan</b></h3>
+
+<h3 class="slider_title">Empresas que <span style="color:#7AB99D">confiam</span> no trabalho da <b>Nortan</b></h3>
 {% include feature_row_slider id="clients" selector="slider4" title_size="h4" properties='data-aos="fade-left"' %}
 
 

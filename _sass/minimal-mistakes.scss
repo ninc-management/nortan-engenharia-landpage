@@ -43,6 +43,7 @@
 @import "minimal-mistakes/outorga-page/second-block";
 @import "minimal-mistakes/outorga-page/third-block";
 @import "minimal-mistakes/outorga-page/fourth-block";
+@import "minimal-mistakes/outorga-page/five-block";
 
 .nav.nav-tabs {
   height: max-content;
@@ -101,6 +102,12 @@
   height: 200px;
 }
 
+#slider4{
+  .iis-bullet-nav{
+    bottom: -24px;
+  }
+}
+
 #metrics {
   .archive__item-teaser {
     width: 100% !important;
@@ -115,12 +122,4 @@
     font-weight: bold;
   }
 }
-
-.clients{
-  text-align: center;
-  font-family: "Marcellus", serif;
-  font-weight: 500;
-  color: #085C5C;
-}
-
 
