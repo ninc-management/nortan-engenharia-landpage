@@ -1,0 +1,53 @@
+<div class="third-block">
+  <div class="content-wrapper">
+    <div class="content-header">
+      <div class="outer-border">
+        Possibilidades ao fazer sua
+        <span class="color-highlight">Outorga</span> com a Nortan
+      </div>
+    </div>
+    <div class="items-wrapper">
+      <ul>
+        <li class="list-item">
+          <h1 class="list-item-number">1</h1>
+          <div>
+            <h3 class="list-item-title">Isenção de Monitoramento</h3>
+            <h4 class="list-item-subtitle">
+              Economizar R$10.000 por ano em relatórios.
+            </h4>
+          </div>
+        </li>
+        <li class="list-item">
+          <h1 class="list-item-number">2</h1>
+          <div>
+            <h3 class="list-item-title">Sem risco de multa</h3>
+            <h4 class="list-item-subtitle">
+              Nos casos de Poços, a multa ultrapassa R$59.000.
+            </h4>
+          </div>
+        </li>
+        <li class="list-item">
+          <h1 class="list-item-number">3</h1>
+          <div>
+            <h3 class="list-item-title">Condicionantes mais brandas</h3>
+            <h4 class="list-item-subtitle">
+              Aumentar o intervalo de monitoramento e economizar R$44.000.
+            </h4>
+          </div>
+        </li>
+        <li class="list-item">
+          <h1 class="list-item-number">4</h1>
+          <div>
+            <h3 class="list-item-title">Garantia de recebimento</h3>
+            <h4 class="list-item-subtitle">
+              Não entregamos apenas o protocolo, mas o documento de fato.
+            </h4>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <button>
+      <a href="#start">Quero a <span class="color-highlight">Outorga</span></a>
+    </button>
+  </div>
+</div>
