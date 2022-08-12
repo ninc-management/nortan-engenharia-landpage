@@ -12,8 +12,12 @@
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    margin: 8.5rem 0rem;
+    margin: 8.5rem 1.5rem;
     min-width: 50%;
+
+    @include breakpoint($medium) {
+      margin: 8.5rem 0rem;
+    }
 
     .content-header {
       background-color: white;
@@ -75,6 +79,11 @@
       margin-top: 1.25rem;
       font-size: 2rem;
       font-family: "Marcellus", serif;
+      width: 96%;
+
+      @include breakpoint($medium) {
+        width: auto;
+      }
 
       a {
         color: white;
