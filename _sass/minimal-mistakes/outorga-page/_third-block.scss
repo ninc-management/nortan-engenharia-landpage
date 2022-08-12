@@ -1,0 +1,116 @@
+.third-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Marcellus", serif;
+
+  h1,
+  h3,
+  h4,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    padding-bottom: 15px;
+  }
+
+  .title-arrow {
+    height: 2rem;
+    width: 3rem;
+    margin: auto auto 1rem auto;
+    background-repeat: no-repeat;
+  }
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin: 8.5rem 0rem;
+    min-width: 50%;
+
+    .content-header {
+      background-color: #002f41;
+      border: 2px solid #275c5c;
+      color: white;
+      padding: 0.25rem;
+      font-size: 1.3rem;
+      border-radius: 0.5rem;
+
+      .outer-border {
+        padding: 1rem 4rem;
+        border: 1px solid #275c5c;
+        text-align: center;
+      }
+    }
+  }
+
+  .items-wrapper {
+    display: flex;
+    justify-content: center;
+    border-left: solid 1px grey;
+    border-bottom: solid 1px grey;
+    border-right: solid 1px grey;
+    padding-top: 20px;
+    width: 96%;
+  }
+  .list-item {
+    display: flex;
+    align-items: center;
+
+    .list-item-title {
+      font-family: "Marcellus", serif;
+      font-size: 1rem;
+      color: #275c5c;
+      font-weight: 300;
+    }
+    .list-item-subtitle {
+      font-family: "Marcellus", serif;
+      font-size: 0.7rem;
+      color: #1b4555;
+      font-weight: 100;
+    }
+
+    .list-item-number {
+      font-family: "open sans", serif;
+      color: grey;
+      margin-right: 15px;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+
+  .color-highlight {
+    color: #7ab99e;
+  }
+
+  button {
+    padding: 1rem 2.5rem;
+    background: #002f41;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-family: "Marcellus", serif;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  @media (max-width: 768px) {
+    .content-wrapper .content-header .outer-border {
+      padding: 1rem 2rem;
+    }
+    button {
+      padding: 1rem 1.5rem;
+    }
+    .items-wrapper {
+      padding: 1rem;
+    }
+  }
+}
