@@ -1,4 +1,10 @@
+{% assign block = page[include.id][0] %}
+
 <div class="third-block">
+  <div
+    class="title-arrow"
+    style="background-image: url('{{ block.arrow_path }}');"
+  ></div>
   <div class="content-wrapper">
     <div class="content-header">
       <div class="outer-border">

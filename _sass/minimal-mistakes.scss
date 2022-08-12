@@ -117,6 +117,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   font-family: "Marcellus", serif;
 
@@ -131,6 +132,17 @@
   li {
     list-style: none;
     padding-bottom: 15px;
+  }
+
+  .title-arrow {
+    height: 2rem;
+    width: 3rem;
+    margin: auto auto 1rem auto;
+    background-repeat: no-repeat;
+
+    @include breakpoint($medium) {
+      margin-left: 38vw;
+    }
   }
 
   .content-wrapper {

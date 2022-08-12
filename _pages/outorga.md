@@ -6,6 +6,7 @@ second_block:
     waves_path: /assets/images/layered_waves.svg
 
 third_block:
+  - arrow_path: /assets/images/third_block_arrow.svg
 ---
 
 {% include /outorga-page/second_block id="second_block" %}
