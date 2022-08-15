@@ -40,6 +40,10 @@
     .specialist-info {
       display: flex;
       flex-wrap: wrap;
+
+      @include breakpoint($medium) {
+        flex-wrap: nowrap;
+      }
     }
 
     .specialist-name {
