@@ -26,13 +26,20 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 0 0 1rem 0;
+    width: 90%;
 
     @include breakpoint($medium) {
+      width: 50%;
       margin: 0;
     }
 
     & h2 {
       margin: 0;
+    }
+
+    .specialist-info {
+      display: flex;
+      flex-wrap: wrap;
     }
 
     .specialist-name {
@@ -59,6 +66,11 @@
       @include breakpoint($medium) {
         margin: 1rem 1.75rem;
       }
+    }
+
+    .specialist-curriculum {
+      color: black;
+      text-align: justify;
     }
   }
 
