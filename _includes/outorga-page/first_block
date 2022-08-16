@@ -1,0 +1,55 @@
+{% assign block = page[include.id][0] %}
+
+<div style="background-color: #fff;">
+	<img style="height: 60px; margin: 1rem 5rem" src="{{ block.nab_path }}">
+</div>
+<div class="first_block" style="background-image: url('{{ block.background_path }}'); height: 800px;">
+  <div class="floating-block">
+    <h1 style="text-align: center;">#OutorgaFácil</h1>
+    <p style="text-align: justify">
+        A <span>Outorga</span> não será mais um problema para o seu 
+        <span>financiamento rural</span>, 
+        <span>tarifa verde</span> ou 
+        <span>venda do imóvel</span>.
+    </p>
+    <form>
+      <input type="email" placeholder="Digite o seu e-mail">
+      <input type="submit" class="btn btn-success btn-custom" value="Quero contratar a Nortan">
+    </form>
+    <form>
+      <input type="tel" id="tel" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" placeholder="(xx) 9 8765-4321">
+      <input type="submit" class="btn btn-success btn-custom" value="Contratar a Nortan pelo WhatsApp">
+    </form>
+  </div>
+  <div class="icons">
+		<div class="col-md-2 col-4">
+      <img src="/assets/images/icons/bullseye.png">
+      <br>
+      <span>Entregar soluções</span>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="/assets/images/icons/handshake.png">
+      <br>
+      <span>Realizar sonhos <br> através da Engenharia</span>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="/assets/images/icons/users.png">
+      <br>
+      <span>Profissionais capacitados e especializados</span>
+    </div>
+  </div>
+  <img class="img-hugo" src="/assets/images/foto_Hugo.png">
+</div>
+
+<script>
+  const tel = document.getElementById('tel');
+  tel.addEventListener('keypress', (e) => applyMask(e.target.value));
+  tel.addEventListener('change', (e) => applyMask(e.target.value));
+
+  const applyMask = (number) => {
+      number = number.replace(/\D/g, "");
+      number = number.replace(/^(\d{2})(\d)/g, "($1) $2");
+      number = number.replace(/(\d)(\d{4})$/, "$1-$2");
+      tel.value = number;
+  }
+</script>

@@ -1,0 +1,86 @@
+.first_block {
+    font-family: "Marcellus", serif;
+  
+    .floating-block{
+      max-width: 600px;
+      background-color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+      top: 3rem;
+      margin-left: 10%;
+      margin-bottom: 5rem;
+  
+      @media only screen and (max-width: 600px) {
+        top: 0.5rem;
+        margin: 1rem;
+      }
+  
+      h1, span {
+        color: #085c5c;
+        font-family: "Marcellus", serif;
+        font-weight: normal;
+      }
+      p {
+        font-size: 27px;
+      }
+  
+      ::placeholder {
+        text-align: center;
+        color: #085c5c;
+      }
+  
+      form {
+        background-color: #fff;
+        margin-top: -30px;
+      }
+  
+      input {
+        text-align: center;
+        color: #085c5c;
+        border: solid 1px #426471;
+        border-radius: 0px;
+        max-width: 500px;
+        font-family: "Marcellus", serif;
+      }
+  
+      .btn-custom {
+        background-color: #7ab99e;
+        color: #053545;
+        border-radius: 0px;
+        width: 100%;
+        max-width: 500px;
+        font-family: "Marcellus", serif;
+      }
+    }
+  
+    .icons {
+      background-color: #085c5c;
+      height: 200px;
+      display:flex;
+      color: #fff;
+      padding: 2rem;
+      font-size: 18px;
+      text-align: center;
+  
+      @media only screen and (max-width: 600px) {
+        font-size: 15px;
+      }
+  
+      img {
+        margin: -0.5rem 0;
+      }
+    }
+  
+    .img-hugo {
+      position: relative;
+      top: -800px;
+      left: 60%;
+      height: 800px;
+  
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+  
