@@ -106,9 +106,9 @@ author:
   location: "Maceió - Alagoas - Brasil"
   email: "contato@nortanprojetos.com"
   links:
-    - label: "82 999529699"
+    - label: "+55 82 998220-1872"
       icon: "fab fa-fw fa-whatsapp"
-      url: "https://api.whatsapp.com/send?phone=5582999529699"
+      url: "https://api.whatsapp.com/send?phone=55829982201872"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/company/nortan-solução-integrada-em-projetos"

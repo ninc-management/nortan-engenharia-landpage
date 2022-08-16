@@ -69,7 +69,7 @@ easy_contact:
   - image_path: /assets/images/contrataFacil.png
     alt: "Contato"
 request_contact:
-  - url: "https://wa.me/558282136209"
+  - url: "https://wa.me/55829982201872"
     icon: "far fa-handshake"
     btn_class: "btn--success"
     btn_label: "SOLICITE UM ORÇAMENTO"
