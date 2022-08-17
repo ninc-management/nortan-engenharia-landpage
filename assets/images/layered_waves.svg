@@ -1,1 +1,42 @@
-<svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 336L32 329.5C64 323 128 310 192 310.8C256 311.7 320 326.3 384 326.5C448 326.7 512 312.3 576 296.5C640 280.7 704 263.3 768 271.2C832 279 896 312 928 328.5L960 345L960 541L928 541C896 541 832 541 768 541C704 541 640 541 576 541C512 541 448 541 384 541C320 541 256 541 192 541C128 541 64 541 32 541L0 541Z" fill="#3a5f57"></path><path d="M0 411L32 419.2C64 427.3 128 443.7 192 448C256 452.3 320 444.7 384 429.7C448 414.7 512 392.3 576 382.2C640 372 704 374 768 384.3C832 394.7 896 413.3 928 422.7L960 432L960 541L928 541C896 541 832 541 768 541C704 541 640 541 576 541C512 541 448 541 384 541C320 541 256 541 192 541C128 541 64 541 32 541L0 541Z" fill="#7db79e"></path></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="visual"
+   viewBox="0 0 960 540"
+   width="960"
+   height="540"
+   version="1.1"
+   sodipodi:docname="layered_waves.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.3354167"
+     inkscape:cx="479.62557"
+     inkscape:cy="270.32761"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="visual" />
+  <path
+     d="m 0,334 32,-6.5 c 32,-6.5 96,-19.5 160,-18.7 64,0.9 128,15.5 192,15.7 64,0.2 128,-14.2 192,-30 64,-15.8 128,-33.2 192,-25.3 64,7.8 128,40.8 160,57.3 l 32,16.5 v 196 h -32 c -32,0 -96,0 -160,0 -64,0 -128,0 -192,0 -64,0 -128,0 -192,0 -64,0 -128,0 -192,0 -64,0 -128,0 -160,0 H 0 Z"
+     fill="#3a5f57"
+     id="path2" />
+  <path
+     d="m 0,413 32,8.2 c 32,8.1 96,24.5 160,28.8 64,4.3 128,-3.3 192,-18.3 64,-15 128,-37.4 192,-47.5 64,-10.2 128,-8.2 192,2.1 64,10.4 128,29 160,38.4 l 32,9.3 v 109 h -32 c -32,0 -96,0 -160,0 -64,0 -128,0 -192,0 -64,0 -128,0 -192,0 -64,0 -128,0 -192,0 -64,0 -128,0 -160,0 H 0 Z"
+     fill="#7db79e"
+     id="path4" />
+</svg>
