@@ -12,10 +12,46 @@
         <span>tarifa verde</span> ou 
         <span>venda do imóvel</span>.
     </p>
-    <form>
-      <input type="email" placeholder="Digite o seu e-mail">
-      <input type="submit" class="btn btn-success btn-custom" value="Quero contratar a Nortan">
-    </form>
+    <div id="mc_embed_signup">
+      <form
+        action="https://nortanengenharia.us10.list-manage.com/subscribe/post?u=4573330cf8986c1ddbe346f31&amp;id=5db67f63ae&amp;f_id=008034e2f0"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        style="background-color: transparent"
+        target="_blank"
+      >
+        <div>
+          <div class="mc-field-group">
+            <input
+              type="email"
+              value=""
+              name="EMAIL"
+              class="required email"
+              id="mce-EMAIL"
+              placeholder="Digite o seu email"
+              style="font-weight: 500; font-size: 1.125rem"
+            />
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px" aria-hidden="true">
+            <input
+              type="text"
+              name="b_4573330cf8986c1ddbe346f31_5db67f63ae"
+              tabindex="-1"
+              value=""
+            />
+          </div>
+          <input
+            type="submit"
+            value="Quero contratar a Nortan"
+            name="subscribe"
+            id="mc-embedded-subscribe"
+            class="btn btn-success btn-custom"
+          />
+        </div>
+      </form>
+    </div>
     <form>
       <input type="tel" id="tel" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" placeholder="(xx) 9 8765-4321">
       <input type="submit" class="btn btn-success btn-custom" value="Contratar a Nortan pelo WhatsApp">
