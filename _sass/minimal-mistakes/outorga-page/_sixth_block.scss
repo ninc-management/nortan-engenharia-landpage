@@ -11,7 +11,7 @@
     text-align: center;
 
     .header-highlight {
-      color: $background;
+      color: $nortan-background;
     }
   }
 
@@ -51,7 +51,7 @@
     }
 
     .specialist-description {
-      color: $background;
+      color: $nortan-background;
       margin: auto;
       text-align: center;
 
@@ -61,7 +61,7 @@
     }
 
     .specialist-picture {
-      border: 1rem solid $background;
+      border: 1rem solid $nortan-background;
       border-radius: 1rem;
       margin: 0 auto 1rem auto;
       height: 200px;
@@ -106,7 +106,7 @@
   button {
     margin: auto;
     padding: 1rem 3rem;
-    background: $background;
+    background: $nortan-background;
     border: none;
     font-size: 2rem;
     font-family: "Marcellus", serif;
