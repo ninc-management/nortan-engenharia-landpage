@@ -1,0 +1,129 @@
+.sixth-block {
+  width: 100%;
+  font-family: "Marcellus", serif;
+  color: white;
+
+  .content-header {
+    font-size: 1.75rem;
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+
+    .header-title {
+      background-color: $nortan;
+      padding: 0.5rem;
+    }
+
+    .header-highlight {
+      color: $nortan-background;
+    }
+
+    .title-arrow {
+      height: 2rem;
+      width: 3rem;
+      margin: -2px auto 1rem auto;
+
+      @include breakpoint($medium) {
+        margin-left: 38vw;
+      }
+    }
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .specialist-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 1rem 0;
+    width: 90%;
+
+    @include breakpoint($medium) {
+      width: 50%;
+      margin: 0;
+    }
+
+    & h2 {
+      margin: 0;
+    }
+
+    .specialist-info {
+      display: flex;
+      flex-wrap: wrap;
+
+      @include breakpoint($medium) {
+        flex-wrap: nowrap;
+      }
+    }
+
+    .specialist-name {
+      font-family: "Marcellus", serif;
+    }
+
+    .specialist-description {
+      color: $nortan-background;
+      margin: auto;
+      text-align: center;
+
+      @include breakpoint($medium) {
+        text-align: left;
+      }
+    }
+
+    .specialist-picture {
+      border: 1rem solid $nortan-background;
+      border-radius: 1rem;
+      margin: 0 auto 1rem auto;
+      height: 200px;
+      width: 200px;
+
+      @include breakpoint($medium) {
+        margin: 1rem 1.75rem;
+      }
+    }
+
+    .specialist-curriculum {
+      color: black;
+      text-align: justify;
+    }
+  }
+
+  .middle-specialist {
+    flex-direction: row-reverse;
+    text-align: end;
+  }
+
+  .middle-specialist .specialist-description {
+    @include breakpoint($medium) {
+      text-align: right;
+    }
+  }
+
+  .align-end {
+    text-align: end;
+  }
+
+  button {
+    margin: auto;
+    padding: 1rem 3rem;
+    background: $nortan-background;
+    border: none;
+    font-size: 2rem;
+    font-family: "Marcellus", serif;
+    border-radius: 1.5rem;
+
+    @include breakpoint($medium) {
+      margin: 2.5rem 0 0 0;
+      padding: 1rem 6rem;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
