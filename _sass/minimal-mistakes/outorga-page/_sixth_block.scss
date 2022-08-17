@@ -4,14 +4,28 @@
   color: white;
 
   .content-header {
-    background-color: $nortan;
     font-size: 1.75rem;
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     text-align: center;
+
+    .header-title {
+      background-color: $nortan;
+      padding: 0.5rem;
+    }
 
     .header-highlight {
       color: $nortan-background;
+    }
+
+    .title-arrow {
+      height: 2rem;
+      width: 3rem;
+      margin: -2px auto 1rem auto;
+
+      @include breakpoint($medium) {
+        margin-left: 38vw;
+      }
     }
   }
 
@@ -91,16 +105,6 @@
 
   .align-end {
     text-align: end;
-  }
-
-  .title-arrow {
-    height: 2rem;
-    width: 3rem;
-    margin: auto auto 1rem auto;
-
-    @include breakpoint($medium) {
-      margin-left: 38vw;
-    }
   }
 
   button {
