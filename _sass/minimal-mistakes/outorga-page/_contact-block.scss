@@ -1,0 +1,12 @@
+.contact-block {
+  text-align: center;
+  font-family: "Marcellus", serif;
+  background: $nortan;
+  color: white;
+  font-size: 1.25rem;
+  padding: 2.5rem 1rem;
+
+  .highlight {
+    color: $nortan-darker;
+  }
+}

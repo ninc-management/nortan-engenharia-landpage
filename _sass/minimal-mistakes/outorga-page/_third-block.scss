@@ -22,8 +22,9 @@
   .title-arrow {
     height: 2rem;
     width: 3rem;
-    margin: auto auto 1rem auto;
+    margin: -2px auto 1rem auto;
     background-repeat: no-repeat;
+    z-index: 9999;
   }
 
   .content-wrapper {
