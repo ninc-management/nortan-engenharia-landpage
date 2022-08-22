@@ -14,7 +14,7 @@
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}" {% if include.iproperties %}{{ include.iproperties }}{% endif %}>
       <div class="archive__item">
         {% if f.image_path or f.images %}
-          <div class="archive__item-teaser">
+          <div class="archive__item-teaser" style="{{ include.teaser_style }}">
             {% if f.image_url%}
               <a href= "{{ f.image_url | relative_url }}" >
             {% endif %}
@@ -32,7 +32,7 @@
               <h3>{{ f.title2 | default: "" }}</h3>
               {% for i in f.images %}
                 <div style="display: flex; flex-direction: row;">
-                <div class="archive__subitem-teaser">
+                <div class="archive__subitem-teaser" style="{{ include.teaser_style }}">
                   <img src=
                   {% if i.image_path contains "://" %}
                     "{{ i.image_path }}"
