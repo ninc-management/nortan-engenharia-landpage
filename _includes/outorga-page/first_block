@@ -88,4 +88,24 @@
       number = number.replace(/(\d)(\d{4})$/, "$1-$2");
       tel.value = number;
   }
+
+  // https://developers.google.com/analytics/devguides/collection/gtagjs/sending-data#send_data_with_the_event_command
+  var form = document.getElementById("mc-embedded-subscribe-form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    setTimeout(submitForm, 1000);
+    var formSubmitted = false;
+
+    function submitForm() {
+      if (!formSubmitted) {
+        formSubmitted = true;
+        form.submit();
+      }
+    }
+
+    gtag("event", "outorga_email_sent", {
+      event_callback: submitForm,
+    });
+  });
 </script>
