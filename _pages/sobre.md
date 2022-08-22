@@ -98,7 +98,7 @@ fundadores:
 
 {% include feature_row id="startup" type="wide" properties='data-aos="fade-up" style="border-bottom: 0px solid; justify-content: left;"' %}
 
-{% include feature_row id="startup_itens" type="dual-center" title="STARTUPS NORTAN" img_style="height: 200px" properties='data-aos="fade-left"' %}
+{% include feature_row id="startup_itens" type="dual-center" title="STARTUPS NORTAN" teaser_style="height:200px" img_style="max-height: 200px"  properties='data-aos="fade-left"' %}
 
 {% include feature_row id="trabalhamos" type="quad-center" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' iproperties='style="border: black 1px solid; border-radius: 20px; padding: 0px 10px;"' %}
 
