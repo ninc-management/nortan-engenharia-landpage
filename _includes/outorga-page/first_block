@@ -52,8 +52,8 @@
         </div>
       </form>
     </div>
-    <form>
-      <input type="tel" id="tel" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" placeholder="(xx) 9 8765-4321">
+    <form id="form-hire-wpp">
+      <input type="tel" id="tel" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" placeholder="(xx) 9 8765-4321" required>
       <input type="submit" class="btn btn-success btn-custom" value="Contratar a Nortan pelo WhatsApp">
     </form>
   </div>
@@ -78,17 +78,6 @@
 </div>
 
 <script>
-  const tel = document.getElementById('tel');
-  tel.addEventListener('keypress', (e) => applyMask(e.target.value));
-  tel.addEventListener('change', (e) => applyMask(e.target.value));
-
-  const applyMask = (number) => {
-      number = number.replace(/\D/g, "");
-      number = number.replace(/^(\d{2})(\d)/g, "($1) $2");
-      number = number.replace(/(\d)(\d{4})$/, "$1-$2");
-      tel.value = number;
-  }
-
   // https://developers.google.com/analytics/devguides/collection/gtagjs/sending-data#send_data_with_the_event_command
   var form = document.getElementById("mc-embedded-subscribe-form");
 
@@ -108,4 +97,53 @@
       event_callback: submitForm,
     });
   });
+
+  const tel = document.getElementById('tel');
+  tel.addEventListener('keypress', (e) => applyMask(e.target.value));
+  tel.addEventListener('change', (e) => applyMask(e.target.value));
+
+  const applyMask = (number) => {
+      number = number.replace(/\D/g, "");
+      number = number.replace(/^(\d{2})(\d)/g, "($1) $2");
+      number = number.replace(/(\d)(\d{4})$/, "$1-$2");
+      tel.value = number;
+  }
+
+  document.getElementById('form-hire-wpp').addEventListener('submit', (e) => sendMessage(e))
+  function sendMessage(e) {
+    e.preventDefault();
+
+    const numberField = document.getElementById('tel');
+
+    if (numberField.value.length == 15) {
+      const token = "EAAI3ZA1a1ZAREBAAbfFUaWIR3B388e5jOYjsZCfk5g7jwIOgu0khiZAlrqM1BBmXXuUWipNpoWT1ZBKReCg0Ny9Qxyq1UEN51Qd0fpBhACcpQ9xXuwpZCEKRMWwZCZBK5ADZCm8wK4LlpnfQZBiauZBNuXzUxj1ytfCyGvdNaqiB4iHc9ek5RKBVZBX4YFfovB2PFLv3qo5Cy7XUQB6pZCkdki2Vj";
+      const payload = {
+        "messaging_product": "whatsapp",
+        "to": numberField.value.replace(/\D/g, ''),
+        "type": "template",
+        "template": {
+          "name": "hello_world",
+          "language": {
+              "code": "en_US"
+          }
+        }
+      };
+      
+      // Fazer request para api da nortan quando possuir o token permanente
+      // fetch("https://plataforma.nortanengenharia.com/api/public/...", {
+      //   method: 'POST',
+      //   headers: {},
+      //   body: JSON.stringify({}),
+      // }).then((res) => {});
+
+      fetch("https://graph.facebook.com/v13.0/111923511621609/messages", {
+        method: 'POST',
+        headers: {
+          'Authorization': "Bearer " + token,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      }).then(res => numberField.value = "");
+    }
+  }
 </script>
