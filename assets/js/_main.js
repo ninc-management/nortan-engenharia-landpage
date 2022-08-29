@@ -201,18 +201,18 @@ $(document).ready(function () {
           switch (member.fullName) {
             case "Augusto Hugo Farias da Cunha":
               excerpt =
-                "Diretor Executivo - CEO<br/><span>" + member.mainDepartment.slice(6) + "</span>";
+                "Diretor Executivo - CEO<br/><span>" + (member.teamsAsMember.length ? member.teamsAsMember.join(', ') : "")  + "</span>";
               break;
             case "Jéssica Gonçalves":
               excerpt =
-                "Diretora de Marketing<br/><span>" + member.mainDepartment.slice(6) + "</span>";
+                "Diretora de Marketing<br/><span>" + (member.teamsAsMember.length ? member.teamsAsMember.join(', ') : "") + "</span>";
               break;
             case "Tales Augusto Costa Gomes":
               excerpt =
-                "Diretor de Operações<br/><span>" + member.mainDepartment.slice(6) + "</span>";
+                "Diretor de Operações<br/><span>" + (member.teamsAsMember.length ? member.teamsAsMember.join(', ') : "") + "</span>";
               break;
             default:
-              excerpt = "<span>" + member.mainDepartment.slice(6) + "</span>";
+              excerpt = "<span>" + (member.teamsAsMember.length ? member.teamsAsMember.join(', ') : "") + "</span>";
               break;
           }
           const el =
